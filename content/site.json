@@ -1,0 +1,14 @@
+{
+  "name": "Cantelo",
+  "domain": "cantelo.ch",
+  "baseUrl": "https://cantelo.ch",
+  "defaultLang": "de",
+  "languages": ["de", "fr", "it", "en"],
+  "email": "hallo@cantelo.ch",
+  "phone": "+41 00 000 00 00",
+  "phoneHref": "+410000000000",
+  "whatsapp": "410000000000",
+  "formEndpoint": "https://api.web3forms.com/submit",
+  "formKey": "REPLACE_WITH_WEB3FORMS_ACCESS_KEY",
+  "colors": { "ink": "#12211C", "paper": "#EDEFE9" }
+}
