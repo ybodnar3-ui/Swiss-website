@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 693 140" width="693" height="140" role="img" aria-label="cantelo">
+  <title>Cantelo</title>
+  <g fill="none" stroke="#12211C" stroke-width="18" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+    <path d="M73.5 56.4A41 41 0 1 0 73.5 123.6"/>
+    <path d="M109 90A41 41 0 1 1 191 90A41 41 0 1 1 109 90"/>
+    <path d="M191 40V140"/>
+    <path d="M243 40V140"/>
+    <path d="M243 90A41 41 0 0 1 325 90V140"/>
+    <path d="M354 40H408"/>
+    <path d="M378 8V140"/>
+    <path d="M433 90H515A41 41 0 1 0 497.5 123.6"/>
+    <path d="M556 0V140"/>
+    <path d="M602 90A41 41 0 1 1 684 90A41 41 0 1 1 602 90"/>
+  </g>
+</svg>
