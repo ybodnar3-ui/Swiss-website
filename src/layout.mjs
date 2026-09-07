@@ -52,7 +52,7 @@ ${alternates}
 <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="/brand/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/styles.css">`;
+<link rel="stylesheet" href="${site.cssPath}">`;
 }
 
 function header({ site, c, lang, page, langs }) {

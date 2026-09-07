@@ -8,7 +8,7 @@
   "trailingSlash": true,
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/assets/styles.(.*).css",
       "headers": [
         {
           "key": "Cache-Control",
@@ -17,11 +17,20 @@
       ]
     },
     {
+      "source": "/assets/shots/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    },
+    {
       "source": "/brand/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=604800"
+          "value": "public, max-age=86400, must-revalidate"
         }
       ]
     },

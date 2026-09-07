@@ -4,6 +4,7 @@
 
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 
 import { page as shell, SLUGS, path as urlPath, esc } from "./src/layout.mjs";
@@ -64,6 +65,13 @@ function checkKeys(base, other, lang, trail = "") {
 
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(dist, { recursive: true });
+
+// The stylesheet is served immutable for a year, so its name must change
+// whenever its bytes do. Without this a returning visitor keeps the old CSS
+// until the cache expires — which is to say, never.
+const cssSource = readFileSync(join(root, "src/styles.css"));
+const cssHash = createHash("sha256").update(cssSource).digest("hex").slice(0, 10);
+site.cssPath = `/assets/styles.${cssHash}.css`;
 
 // --- language pages -------------------------------------------------------
 const urls = [];
@@ -140,7 +148,7 @@ ${site.languages.map((l) => `<a href="${urlPath(l, "home")}" hreflang="${l}">${c
 // --- static assets --------------------------------------------------------
 mkdirSync(join(dist, "assets"), { recursive: true });
 if (existsSync(join(root, "assets"))) cpSync(join(root, "assets"), join(dist, "assets"), { recursive: true });
-cpSync(join(root, "src/styles.css"), join(dist, "assets/styles.css"));
+writeFileSync(join(dist, site.cssPath.replace(/^\//, "")), cssSource);
 cpSync(join(root, "brand"), join(dist, "brand"), { recursive: true });
 cpSync(join(root, "brand/cantelo-favicon.svg"), join(dist, "brand/favicon.svg"));
 
@@ -156,7 +164,7 @@ cpSync(join(root, "brand/cantelo-favicon.svg"), join(dist, "brand/favicon.svg"))
     : 0;
   const bytes =
     statSync(join(dist, urlPath(site.defaultLang, "home"), "index.html")).size +
-    statSync(join(dist, "assets/styles.css")).size +
+    statSync(join(dist, site.cssPath.replace(/^\//, ""))).size +
     statSync(join(dist, "brand/favicon.svg")).size +
     shots;
   const weight = Math.round(bytes / 1024);
@@ -222,7 +230,7 @@ for (const f of htmlFiles) {
 }
 
 const kb = (n) => `${(n / 1024).toFixed(1)} kB`;
-const totalCss = readFileSync(join(dist, "assets/styles.css")).length;
+const totalCss = cssSource.length;
 console.log(`\n  ${written.length} files → dist/`);
 console.log(`  ${site.languages.length} languages · ${PAGES.length} pages each · ${demos.length} demo concepts`);
 console.log(`  css ${kb(totalCss)}`);

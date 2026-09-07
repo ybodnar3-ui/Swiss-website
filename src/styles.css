@@ -283,15 +283,29 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .cards { display: grid; gap: 1px; margin-top: clamp(44px, 5vw, 72px); background: var(--rule); border: 1px solid var(--rule); }
 @media (min-width: 860px) { .cards { grid-template-columns: repeat(3, 1fr); } }
-.card { background: var(--paper); padding: clamp(26px, 3vw, 38px); display: flex; flex-direction: column; text-decoration: none; transition: background 150ms ease; }
+.card { background: var(--paper); padding: clamp(18px, 1.8vw, 24px); display: flex; flex-direction: column; text-decoration: none; transition: background 150ms ease; }
 .card:hover { background: #E6E9E1; }
-.card__tag { font-family: var(--mono); font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
-.card__thumb { margin: 24px 0 26px; aspect-ratio: 4 / 3; border: 1px solid var(--rule); overflow: hidden; background: #fff; }
-.card__thumb svg { width: 100%; height: 100%; }
+.card__thumb {
+  position: relative; aspect-ratio: 4 / 3; overflow: hidden;
+  background: #fff; border: 1px solid var(--rule); margin-bottom: 22px;
+}
+/* The shot is the top of a long page, so it always ends mid-content.
+   Fading the last strip makes that read as "continues" rather than "broken". */
+.card__thumb::after {
+  content: ""; position: absolute; inset: auto 0 0 0; height: 34%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.92) 78%, #fff 100%);
+  pointer-events: none;
+}
+.card__tag {
+  position: absolute; left: 10px; top: 10px; z-index: 1;
+  background: var(--ink); color: var(--paper);
+  font-family: var(--mono); font-size: 0.625rem; letter-spacing: 0.13em;
+  text-transform: uppercase; padding: 5px 8px;
+}
 .card h3 { font-size: var(--step-2); letter-spacing: -0.028em; }
-.card__branch { font-size: 0.875rem; color: var(--muted); margin-top: 7px; }
-.card__desc { font-size: 0.9375rem; color: var(--muted); line-height: 1.5; margin-top: 16px; flex: 1; }
-.card__go { margin-top: 24px; font-size: 0.9375rem; font-weight: 600; display: inline-flex; align-items: center; gap: 9px; }
+.card__branch { font-size: 0.875rem; color: var(--muted); margin-top: 6px; }
+.card__desc { font-size: 0.9375rem; color: var(--muted); line-height: 1.5; margin-top: 14px; flex: 1; }
+.card__go { margin-top: 20px; font-size: 0.9375rem; font-weight: 600; display: inline-flex; align-items: center; gap: 9px; }
 .card:hover .card__go .arrow { transform: translateX(4px); }
 .card__go .arrow { transition: transform 160ms ease; }
 

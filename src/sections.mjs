@@ -154,8 +154,7 @@ export function examples(c, lang, { full = false } = {}) {
   const cards = e.concepts
     .map(
       (k) => `<a class="card" href="${demoPath(k.slug)}">
-      <span class="card__tag">${esc(e.conceptLabel)}</span>
-      <div class="card__thumb">${thumb(k, e.conceptLabel)}</div>
+      <div class="card__thumb">${thumb(k, e.conceptLabel)}<span class="card__tag">${esc(e.conceptLabel)}</span></div>
       <h3>${esc(k.name)}</h3>
       <p class="card__branch">${esc(k.branch)}</p>
       <p class="card__desc">${esc(k.desc)}</p>
