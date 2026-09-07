@@ -25,6 +25,16 @@ python3 -m http.server 4173 --directory dist
 
 Then open http://localhost:4173.
 
+To review everything at once:
+
+```bash
+node scripts/preview-index.mjs
+```
+
+Writes `dist/_preview.html` — every generated page as a live, clickable
+thumbnail, grouped by language. A development aid, not part of the site;
+`build.mjs` clears it, so regenerate it after each build.
+
 ## Deploy
 
 Upload the contents of `dist/` to the web root of any static host — Infomaniak,
