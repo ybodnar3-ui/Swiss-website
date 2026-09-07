@@ -63,15 +63,21 @@ export function priceRows(rows) {
   </tbody></table>`;
 }
 
-export function prices(c, lang) {
+/** `header: false` on the standalone pricing page, where the page's own
+ *  h1 already carries the same title. */
+export function prices(c, lang, { header = true } = {}) {
   const p = c.prices;
   return `<section class="section section--ink" id="preise">
   <div class="wrap">
-    <p class="kicker">${esc(p.kicker)}</p>
+    ${
+      header
+        ? `<p class="kicker">${esc(p.kicker)}</p>
     <div class="head-split">
       <h2 class="h-sec">${esc(p.title)}</h2>
       <p class="lead">${esc(p.lead)}</p>
-    </div>
+    </div>`
+        : ""
+    }
     <div class="price-main">
       <div class="price-main__l">
         <div class="price-fig"><b>${esc(p.main.price)}</b><span>${esc(p.main.currency)}</span><em>${esc(p.main.label)}</em></div>

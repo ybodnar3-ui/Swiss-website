@@ -25,11 +25,13 @@ export const preise = (c, lang, site) =>
   [
     `<section class="section section--tight"><div class="wrap">
       <p class="kicker">${esc(c.prices.kicker)}</p>
-      <h1 class="h-sec">${esc(c.prices.title)}</h1>
-      <p class="lead">${esc(c.prices.lead)}</p>
+      <div class="head-split">
+        <h1 class="h-sec">${esc(c.prices.title)}</h1>
+        <p class="lead">${esc(c.prices.lead)}</p>
+      </div>
     </div></section>`,
-    S.prices(c, lang),
     S.included(c),
+    S.prices(c, lang, { header: false }),
     S.maintenance(c),
     S.faq(c),
     S.contact(c, lang, site),

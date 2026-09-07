@@ -1,0 +1,184 @@
+{
+  "code": "it",
+  "label": "Italiano",
+  "dir": "it",
+  "nav": { "angebot": "Prestazioni", "preise": "Prezzi", "beispiele": "Esempi", "kontakt": "Contatto", "cta": "Richiedere un'offerta", "menu": "Menu", "close": "Chiudi", "language": "Lingua" },
+  "meta": {
+    "home": { "title": "Cantelo — Siti web per le imprese svizzere. 990 CHF, 7 giorni.", "description": "Realizziamo siti web per le piccole imprese svizzere. Prezzo fisso di 990 CHF, sette giorni lavorativi, pagamento dopo la messa online. Hosting in Svizzera, dominio .ch a vostro nome." },
+    "preise": { "title": "Prezzi — Cantelo", "description": "Listino completo: sito web 990 CHF, prestazioni supplementari, manutenzione da 29 CHF al mese. Nessun costo nascosto, nessuna offerta da richiedere." },
+    "beispiele": { "title": "Esempi — Cantelo", "description": "Progetti realizzati e concetti di design per artigianato, studi medici e ristorazione in Svizzera." },
+    "impressum": { "title": "Impressum — Cantelo", "description": "Impressum e identificazione del fornitore Cantelo." },
+    "datenschutz": { "title": "Protezione dei dati — Cantelo", "description": "Come Cantelo tratta i dati personali." },
+    "agb": { "title": "CG — Cantelo", "description": "Condizioni generali di Cantelo." }
+  },
+  "hero": { "title": "Il vostro sito web. In 7 giorni. 990 CHF.", "lead": "Realizziamo siti web per le piccole imprese svizzere. Prezzo fisso, termine fisso. Pagate quando il sito è online.", "ctaPrimary": "Richiedere un'offerta", "ctaSecondary": "Vedere gli esempi" },
+  "trust": ["Pagamento dopo la messa online", "Hosting in Svizzera", "Prezzo fisso, senza supplementi", "Dominio .ch a vostro nome"],
+  "included": {
+    "kicker": "La prestazione",
+    "title": "Che cosa comprendono i 990 CHF",
+    "lead": "Un sito completo, che funziona su ogni dispositivo ed è in regola dal profilo giuridico. Niente che dobbiate acquistare in seguito solo per poterlo usare.",
+    "items": [
+      { "t": "Versione mobile", "d": "Più della metà dei vostri visitatori arriva dal telefono. Il sito è costruito per questo formato, non adattato in un secondo tempo." },
+      { "t": "Testi in tedesco", "d": "I testi li scriviamo noi. Voi fornite i fatti, noi diamo loro una forma che i vostri clienti leggeranno davvero." },
+      { "t": "Galleria dei vostri lavori", "d": "Le foto dei vostri progetti, sistemate e compresse perché il sito resti veloce." },
+      { "t": "Dominio .ch a vostro nome", "d": "Primo anno compreso. Il dominio appartiene a voi, non a noi — anche se in seguito cambiate fornitore." },
+      { "t": "Modulo di contatto", "d": "Le richieste arrivano direttamente nella vostra casella di posta. Con protezione antispam e senza tracker di terzi." },
+      { "t": "Certificato SSL", "d": "Una connessione cifrata. Senza, il browser mostra ai vostri clienti un avviso di sicurezza." },
+      { "t": "Impressum e informativa sulla privacy", "d": "Redatti per la vostra impresa, secondo il diritto svizzero." },
+      { "t": "Due giri di correzioni", "d": "Vedete la bozza, dite che cosa va cambiato, noi lo cambiamo. Due volte, senza supplemento." }
+    ],
+    "footnote": "Consegna in sette giorni lavorativi, a partire dal giorno in cui riceviamo i vostri contenuti."
+  },
+  "process": {
+    "kicker": "Svolgimento",
+    "title": "Quattro passi, sette giorni lavorativi",
+    "steps": [
+      { "n": "01", "t": "Colloquio", "d": "Quindici minuti al telefono. Chiariamo di che cosa ha bisogno la vostra impresa — e di che cosa no. Gratuito e senza impegno." },
+      { "n": "02", "t": "Contenuti", "d": "Ci mandate foto, dati e tutto ciò che deve stare sul sito. Quello che manca lo formuliamo noi e ve lo sottoponiamo." },
+      { "n": "03", "t": "Bozza", "d": "Entro sette giorni lavorativi il vostro sito è pronto. Voi lo guardate, noi correggiamo. Due giri sono compresi." },
+      { "n": "04", "t": "Messa online", "d": "Dominio, hosting, SSL. La fattura arriva quando il sito è online. Non prima." }
+    ]
+  },
+  "prices": {
+    "kicker": "Prezzi",
+    "title": "Tutti i prezzi in chiaro",
+    "lead": "La maggior parte delle agenzie scrive « offerta su richiesta ». Noi scriviamo quanto costa. Così in due minuti vedete se facciamo al caso vostro.",
+    "main": { "price": "990", "currency": "CHF", "label": "una tantum", "title": "Sito web", "desc": "Una pagina con tutte le sezioni di cui la vostra impresa ha bisogno. Tutto quello che sta nell'elenco qui sopra è compreso.", "cta": "Richiedere un'offerta" },
+    "addons": {
+      "title": "Prestazioni supplementari",
+      "note": "Solo se ne avete bisogno. Non proponiamo nulla di cui la vostra impresa non abbia davvero necessità.",
+      "rows": [
+        ["Pagina supplementare", "190"],
+        ["Seconda versione linguistica (FR / IT / EN)", "290"],
+        ["Pagina « Posti vacanti »", "190"],
+        ["Prenotazione online (Calendly / Cal.com)", "190"],
+        ["Logo — 3 concetti, 2 giri di correzioni", "490"],
+        ["Calcolatore di prezzo", "290"],
+        ["Dominio premium (.swiss, .com di seconda mano)", "costo + 90"],
+        ["Realizzazione urgente in 48 ore", "+300"],
+        ["Terzo giro di correzioni e successivi", "90"]
+      ]
+    }
+  },
+  "maintenance": {
+    "kicker": "In seguito",
+    "title": "Manutenzione",
+    "lead": "Facoltativa. Un sito continua a funzionare anche senza manutenzione — ma hosting, dominio e aggiornamenti di sicurezza vanno seguiti da qualcuno. O da voi, o da noi.",
+    "tiers": [
+      { "name": "Basis", "price": "29", "period": "al mese", "desc": "L'esercizio del vostro sito.", "items": ["Hosting in Svizzera", "Certificato SSL", "Dominio", "Copie di sicurezza quotidiane", "Aggiornamenti", "Monitoraggio della raggiungibilità"], "note": "Le modifiche sono fatturate separatamente.", "featured": false },
+      { "name": "Plus", "price": "49", "period": "al mese", "desc": "Per imprese che ogni tanto cambiano qualcosa.", "items": ["Tutto quello che comprende Basis", "Una piccola modifica al mese"], "note": "Le modifiche non utilizzate decadono a fine mese.", "featured": true },
+      { "name": "Pro", "price": "99", "period": "al mese", "desc": "Per imprese in cui qualcosa si muove di continuo.", "items": ["Tutto quello che comprende Basis", "Fino a quattro piccole modifiche al mese"], "note": "Le modifiche non utilizzate decadono a fine mese.", "featured": false }
+    ],
+    "annual": "Con il pagamento annuale pagate dieci mesi invece di dodici.",
+    "smallTitle": "Che cosa vale come piccola modifica",
+    "smallYesLabel": "Vale come piccola modifica",
+    "smallNoLabel": "Non vale",
+    "smallYes": ["Testo", "Foto", "Prezzo", "Orari di apertura", "Recapiti", "Aggiunta di una recensione"],
+    "smallNo": ["Nuova pagina", "Nuova sezione", "Nuova funzione", "Nuova veste grafica"],
+    "extraTitle": "Modifiche senza abbonamento",
+    "extraRows": [["Singola piccola modifica", "90"], ["Modifica media (nuova sezione, nuova galleria)", "190"], ["Nuova pagina", "190"]],
+    "termsTitle": "Durata",
+    "terms": "La manutenzione dura dodici mesi e in seguito si rinnova automaticamente. La disdetta è possibile fino a un mese prima della scadenza. In caso di disdetta ricevete tutti i file del vostro sito e il dominio resta vostro."
+  },
+  "examples": {
+    "kicker": "Esempi",
+    "title": "Lavori e concetti",
+    "lead": "Progetti realizzati per clienti e concetti di design. I concetti sono contrassegnati come tali e non mostrano imprese reali — preferiamo dirvi che cosa è reale piuttosto che lasciarvelo scoprire.",
+    "realTitle": "Progetti realizzati",
+    "realEmpty": "I primi progetti approvati dai clienti compariranno qui. Non pubblichiamo alcun lavoro senza il consenso del cliente.",
+    "conceptsTitle": "Concetti di design",
+    "conceptsLead": "Tre esempi di come può presentarsi il sito di una tipica impresa svizzera. Sono tutti cliccabili. Le imprese che vi figurano non esistono.",
+    "conceptLabel": "Concetto di design",
+    "openLabel": "Guardare",
+    "concepts": [
+      { "slug": "maler", "name": "Brunner Malerarbeiten", "branch": "Pittore e gessatore", "desc": "Un mestiere che si vende con le fotografie. Prima la galleria, subito sotto il modulo per l'offerta." },
+      { "slug": "zahnarzt", "name": "Praxis am Lindenplatz", "branch": "Studio dentistico", "desc": "Fiducia e raggiungibilità. Trattamenti, team, numero d'emergenza e appuntamento online." },
+      { "slug": "restaurant", "name": "Trattoria Bellavista", "branch": "Ristorante", "desc": "Menu, orari di apertura, prenotazione. Quello che gli ospiti cercano davvero." }
+    ]
+  },
+  "faq": {
+    "kicker": "Domande",
+    "title": "Quello che i clienti ci chiedono",
+    "items": [
+      { "q": "Perché costa solo 990 franchi?", "a": "Perché siamo un piccolo studio, non paghiamo un ufficio in Bahnhofstrasse e non abbiamo uno strato intermedio di capiprogetto. Realizziamo siti per piccole imprese secondo un procedimento collaudato. Lo stesso lavoro in un'agenzia classica costa quattro o cinque volte tanto, perché lì ci guadagnano quattro o cinque persone." },
+      { "q": "Chi c'è dietro Cantelo?", "a": "Cantelo è un piccolo studio. Lavoriamo senza ufficio e senza rete di vendita, e trattiamo direttamente con voi. I nostri dati completi si trovano nell'impressum." },
+      { "q": "Avete sede in Svizzera?", "a": "No. Lavoriamo dall'estero e seguiamo imprese svizzere. Il vostro sito è ospitato in Svizzera, il dominio è registrato a vostro nome e la fattura arriva solo quando il sito è online. Il rischio sta quindi dalla nostra parte, non dalla vostra. Se cercate un fornitore con un ufficio nel vostro comune, non siamo la scelta giusta — preferiamo dirlo adesso piuttosto che dopo il primo colloquio." },
+      { "q": "E se il risultato non mi piace?", "a": "Due giri di correzioni sono compresi. Pagate solo dopo l'accettazione. Se dopo due giri non vi abbiamo convinti, non abbiamo fatto il nostro lavoro." },
+      { "q": "Quanto tempo ci vuole davvero?", "a": "Sette giorni lavorativi dal momento in cui abbiamo tutti i contenuti. In pratica è lì che di solito ci si blocca: raccogliere foto e informazioni richiede spesso più tempo del sito stesso. Nel primo colloquio vi diciamo esattamente di che cosa abbiamo bisogno." },
+      { "q": "Ho bisogno della manutenzione?", "a": "Dei pacchetti di modifiche no. Hosting, dominio e SSL servono a ogni sito — potete occuparvene anche voi o acquistarli altrove. Lo offriamo perché la maggior parte delle imprese preferisce non pensarci, non perché senza di noi sia impossibile." },
+      { "q": "E se disdico la manutenzione?", "a": "Ricevete tutti i file del vostro sito e il dominio resta vostro. Non c'è nulla che vi trattenga da noi." },
+      { "q": "Fate anche il francese o l'italiano?", "a": "Sì, 290 franchi per ogni versione linguistica supplementare. Questo sito esiste esso stesso in quattro lingue — così vedete che cosa ricevete." },
+      { "q": "Ho già un sito. Ne vale la pena?", "a": "Dipende. Se il vostro sito attuale funziona sul telefono e porta richieste, tenetelo. Mandateci il link — se non vediamo motivo di rifarlo, ve lo diciamo." }
+    ]
+  },
+  "contact": {
+    "kicker": "Contatto",
+    "title": "Parliamo del vostro progetto",
+    "lead": "Scriveteci in due frasi di che cosa avete bisogno. Rispondiamo entro un giorno lavorativo — con una risposta concreta, non con la richiesta di un appuntamento per parlare di un possibile appuntamento.",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Il vostro nome o quello dell'impresa",
+      "contact": "E-mail o telefono",
+      "contactPlaceholder": "Come possiamo raggiungervi",
+      "message": "Il vostro messaggio",
+      "messagePlaceholder": "Che tipo di impresa avete e che cosa deve fare il sito?",
+      "submit": "Inviare la richiesta",
+      "sending": "Invio in corso…",
+      "success": "Grazie. La vostra richiesta è arrivata — ci facciamo vivi entro un giorno lavorativo.",
+      "error": "Non ha funzionato. Scriveteci direttamente a",
+      "privacy": "Inviando il modulo acconsentite all'uso dei vostri dati per l'evasione della richiesta. Maggiori dettagli nell'{link}.",
+      "privacyLink": "informativa sulla privacy"
+    },
+    "directTitle": "Oppure direttamente",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefono",
+    "whatsappLabel": "WhatsApp",
+    "whatsappText": "Buongiorno, sono interessato a un sito web."
+  },
+  "footer": { "tagline": "Siti web per le piccole imprese svizzere.", "legal": "Note legali", "impressum": "Impressum", "datenschutz": "Protezione dei dati", "agb": "CG", "rights": "Tutti i diritti riservati." },
+  "legal": {
+    "placeholderNotice": "Questi dati non sono ancora completi. Prima della messa online devono essere sostituiti con i dati effettivi.",
+    "impressum": {
+      "title": "Impressum",
+      "blocks": [
+        { "h": "Responsabile del contenuto di questo sito", "p": ["[RAGIONE SOCIALE DELL'IMPRESA O NOME DEL TITOLARE]", "[VIA E NUMERO]", "[NAP, LOCALITÀ]", "[PAESE]"] },
+        { "h": "Contatto", "p": ["E-mail: [INDIRIZZO E-MAIL]", "Telefono: [NUMERO DI TELEFONO]"] },
+        { "h": "Registro di commercio", "p": ["[NUMERO DI REGISTRO DI COMMERCIO OPPURE: NON ISCRITTO NEL REGISTRO DI COMMERCIO]"] },
+        { "h": "Imposta sul valore aggiunto", "p": ["[NUMERO IDI / IVA OPPURE: NON ASSOGGETTATO ALL'IVA]"] },
+        { "h": "Esclusione di responsabilità", "p": ["I contenuti di questo sito sono redatti con cura. Non si assume alcuna garanzia quanto alla loro esattezza, completezza e attualità. Della responsabilità per i contenuti di siti esterni ai quali si rinvia rispondono esclusivamente i rispettivi gestori."] },
+        { "h": "Diritto d'autore", "p": ["Tutti i contenuti di questo sito, in particolare testi, veste grafica e immagini, sono protetti dal diritto d'autore. Un utilizzo che ecceda i limiti del diritto d'autore richiede un previo consenso scritto."] }
+      ]
+    },
+    "datenschutz": {
+      "title": "Protezione dei dati",
+      "intro": "La presente informativa descrive quali dati personali trattiamo quando visitate questo sito e quando ci contattate. Si fonda sulla legge federale svizzera sulla protezione dei dati (LPD).",
+      "blocks": [
+        { "h": "Titolare del trattamento", "p": ["[RAGIONE SOCIALE]", "[INDIRIZZO]", "E-mail: [INDIRIZZO E-MAIL]"] },
+        { "h": "Quali dati trattiamo", "p": ["Alla consultazione di questo sito, il fornitore di hosting registra nei log del server indicazioni tecniche quali indirizzo IP, momento dell'accesso, pagina richiamata e browser utilizzato. Questi dati sono necessari a un esercizio sicuro e vengono cancellati dopo breve tempo.", "Se utilizzate il modulo di contatto, trattiamo i dati che inserite: nome, recapito e messaggio. Li utilizziamo esclusivamente per rispondere alla vostra richiesta."] },
+        { "h": "Cookie e analisi", "p": ["Questo sito non utilizza cookie a scopi pubblicitari o di analisi. Non sono integrati servizi di Google, Meta o fornitori analoghi. Caratteri e script sono forniti dal nostro server, non da reti di terzi."] },
+        { "h": "Comunicazione a terzi", "p": ["Per il recapito dei messaggi del modulo ci avvaliamo di un fornitore esterno. Questi riceve i dati trasmessi unicamente ai fini del recapito. I vostri dati non sono comunicati oltre, salvo obbligo di legge."] },
+        { "h": "Conservazione", "p": ["Conserviamo le richieste per il tempo necessario alla loro evasione ed eventuali domande successive, al massimo per la durata dei termini legali di conservazione."] },
+        { "h": "I vostri diritti", "p": ["Potete in ogni momento chiedere se e quali dati trattiamo sul vostro conto e domandarne la rettifica o la cancellazione. Rivolgetevi all'indirizzo indicato sopra."] },
+        { "h": "Modifiche", "p": ["Possiamo adeguare la presente informativa. Fa stato la versione pubblicata su questa pagina."] }
+      ]
+    },
+    "agb": {
+      "title": "Condizioni generali",
+      "intro": "Le presenti condizioni si applicano a tutti i mandati conclusi tra Cantelo e il cliente, salvo accordo scritto contrario.",
+      "blocks": [
+        { "h": "1. Prestazione", "p": ["Cantelo realizza un sito web secondo l'estensione descritta nell'offerta. L'estensione della prestazione di base a 990 franchi è indicata su questo sito alla voce « Prestazioni ». Le prestazioni supplementari sono fornite solo se espressamente convenute."] },
+        { "h": "2. Collaborazione del cliente", "p": ["Il cliente mette a disposizione i contenuti necessari al sito, in particolare fotografie, indicazioni sull'impresa e recapiti, e conferma di essere legittimato a utilizzarli. Il termine di sette giorni lavorativi decorre non appena tutti i contenuti necessari sono disponibili."] },
+        { "h": "3. Correzioni", "p": ["Due giri di correzioni sono compresi nel prezzo. Per giro di correzioni si intende un riscontro complessivo sulla bozza sottoposta. Ogni ulteriore giro è fatturato 90 franchi."] },
+        { "h": "4. Accettazione e pagamento", "p": ["La fattura è emessa dopo la messa online del sito ed è pagabile entro 30 giorni. Se entro dieci giorni dalla messa online il cliente non solleva contestazioni, la prestazione si considera accettata."] },
+        { "h": "5. Dominio e hosting", "p": ["Il dominio è registrato a nome del cliente. Il primo anno del dominio .ch è compreso nel prezzo. In seguito si applicano le tasse del registrar, che sono assunte nell'ambito di un abbonamento di manutenzione."] },
+        { "h": "6. Manutenzione", "p": ["Gli abbonamenti di manutenzione hanno una durata di dodici mesi e si rinnovano poi automaticamente di dodici mesi alla volta. La disdetta è possibile fino a un mese prima della scadenza.", "L'estensione delle piccole modifiche comprese dipende dall'abbonamento scelto. Le modifiche non utilizzate decadono a fine mese e non sono riportate. Valgono come piccole modifiche gli adeguamenti di testi, fotografie, prezzi, orari di apertura e recapiti, nonché l'aggiunta di una recensione. Nuove pagine, nuove sezioni, nuove funzioni e rifacimenti grafici non valgono come piccole modifiche."] },
+        { "h": "7. Cessazione", "p": ["Alla cessazione del rapporto di manutenzione il cliente riceve tutti i file del sito in forma utilizzabile. Il dominio resta al cliente."] },
+        { "h": "8. Diritti sui contenuti", "p": ["Dopo il pagamento integrale i diritti d'uso sul sito realizzato passano al cliente. Cantelo resta legittimata a citare il progetto come referenza, salvo opposizione del cliente."] },
+        { "h": "9. Responsabilità", "p": ["Cantelo risponde dei danni cagionati intenzionalmente o per negligenza grave. Ogni ulteriore responsabilità, in particolare per il mancato guadagno o per danni indiretti, è esclusa nei limiti consentiti dalla legge."] },
+        { "h": "10. Diritto applicabile", "p": ["Al rapporto contrattuale è applicabile il diritto svizzero. Il foro competente è [INDICARE IL FORO]."] }
+      ]
+    }
+  },
+  "demoBanner": { "label": "Concetto di design", "text": "Esempio realizzato da Cantelo. {name} non è un'impresa reale.", "back": "Ritorno a Cantelo", "cta": "Un sito così da 990 CHF" },
+  "notFound": { "title": "Pagina non trovata", "lead": "Questa pagina non esiste — o non esiste più.", "cta": "Alla pagina iniziale" }
+}
