@@ -1,4 +1,5 @@
 import { demoShell } from "./shell.mjs";
+import { photo, monogram, mapSvg } from "./media.mjs";
 
 const css = `
 body { background: #fff; color: #16242B; font: 400 17px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -30,6 +31,7 @@ body { background: #fff; color: #16242B; font: 400 17px/1.6 "Helvetica Neue", He
 .emerg b { display: block; color: #A8452F; margin-bottom: 3px; }
 
 .s { padding: clamp(52px,7vw,90px) 0; }
+.praxisbild { aspect-ratio: 21/9; overflow: hidden; margin-bottom: clamp(40px,5vw,64px); border: 1px solid #DCE8ED; }
 .s--alt { background: #F2F7F9; }
 .k { font: 500 12px/1 ui-monospace, Menlo, monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
 .h2 { font-size: clamp(26px,3.5vw,38px); line-height: 1.12; letter-spacing: -.028em; max-width: 22ch; }
@@ -47,8 +49,7 @@ body { background: #fff; color: #16242B; font: 400 17px/1.6 "Helvetica Neue", He
 
 .team { display: grid; gap: 26px; margin-top: 42px; }
 @media (min-width: 700px) { .team { grid-template-columns: repeat(4,1fr); } }
-.team .av { aspect-ratio: 1; border-radius: 50%; background: #DCE8ED; display: grid; place-items: center;
-  font: 500 11px/1 ui-monospace, Menlo, monospace; letter-spacing: .1em; text-transform: uppercase; color: #7E959E; margin-bottom: 16px; }
+.team .av { aspect-ratio: 1; border-radius: 50%; overflow: hidden; margin-bottom: 16px; }
 .team h3 { font-size: 17px; letter-spacing: -.02em; }
 .team p { font-size: 14px; color: #5C7079; margin-top: 4px; }
 
@@ -59,8 +60,7 @@ body { background: #fff; color: #16242B; font: 400 17px/1.6 "Helvetica Neue", He
 .form input, .form select, .form textarea { width: 100%; font: inherit; font-size: 16px; padding: 13px 14px; border: 1px solid #C3D6DE; background: #fff; border-radius: 0; }
 .form textarea { min-height: 96px; resize: vertical; }
 .form button { justify-self: start; background: var(--accent); color: #fff; border: 0; padding: 15px 30px; font: 600 16px/1 inherit; border-radius: 999px; cursor: not-allowed; opacity: .85; }
-.map { aspect-ratio: 4/3; background: #E4EFF3; display: grid; place-items: center; color: #7E959E;
-  font: 500 12px/1 ui-monospace, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; border: 1px solid #DCE8ED; }
+.map { aspect-ratio: 4/3; overflow: hidden; border: 1px solid #DCE8ED; }
 .addr li { padding: 14px 0; border-top: 1px solid #DCE8ED; display: flex; justify-content: space-between; gap: 18px; font-size: 16px; }
 .addr .lab { color: #5C7079; font-size: 14px; }
 .foot { background: #16242B; color: #9DB0B8; padding: 44px 0 36px; font-size: 14px; }
@@ -107,6 +107,7 @@ const body = `
 
 <section class="s" id="behandlungen">
   <div class="w">
+    <div class="praxisbild">${photo({set:"zahnarzt",name:"praxis",alt:"Praxisräume",tone:["#CBDDE4","#7E9AA8"]})}</div>
     <p class="k">Behandlungen</p>
     <h2 class="h2">Was wir anbieten</h2>
     <p class="sub">Wir behandeln, was nötig ist, und erklären vorher, warum. Bei Behandlungen über 500 Franken erhalten Sie immer einen schriftlichen Kostenvoranschlag.</p>
@@ -127,10 +128,10 @@ const body = `
     <h2 class="h2">Wer Sie behandelt</h2>
     <p class="sub">Vier Personen, seit Jahren dieselben. Sie werden nicht bei jedem Termin von jemand anderem empfangen.</p>
     <div class="team">
-      <div><div class="av">Foto</div><h3>Dr. med. dent. A. Meier</h3><p>Praxisinhaberin, Implantologie</p></div>
-      <div><div class="av">Foto</div><h3>Dr. med. dent. S. Frei</h3><p>Allgemeine Zahnmedizin</p></div>
-      <div><div class="av">Foto</div><h3>N. Hofer</h3><p>Dentalhygienikerin</p></div>
-      <div><div class="av">Foto</div><h3>C. Baumann</h3><p>Praxisassistenz, Empfang</p></div>
+      <div><div class="av">${monogram("Dr. med. dent. A. Meier","#2E6F8E")}</div><h3>Dr. med. dent. A. Meier</h3><p>Praxisinhaberin, Implantologie</p></div>
+      <div><div class="av">${monogram("Dr. med. dent. S. Frei","#3E7F6A")}</div><h3>Dr. med. dent. S. Frei</h3><p>Allgemeine Zahnmedizin</p></div>
+      <div><div class="av">${monogram("N. Hofer","#6B7F97")}</div><h3>N. Hofer</h3><p>Dentalhygienikerin</p></div>
+      <div><div class="av">${monogram("C. Baumann","#4A6E86")}</div><h3>C. Baumann</h3><p>Praxisassistenz, Empfang</p></div>
     </div>
   </div>
 </section>
@@ -152,7 +153,7 @@ const body = `
       </form>
     </div>
     <div id="praxis">
-      <div class="map">Karte</div>
+      <div class="map">${mapSvg("#2E6F8E")}</div>
       <ul class="addr">
         <li><span>Lindenplatz 4, 8004 Zürich</span><span class="lab">Adresse</span></li>
         <li><span>Tram 2 / 3, Haltestelle Lindenplatz</span><span class="lab">ÖV</span></li>

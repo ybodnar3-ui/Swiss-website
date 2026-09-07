@@ -1,4 +1,5 @@
 import { demoShell } from "./shell.mjs";
+import { photo } from "./media.mjs";
 
 const css = `
 body { background: #FAF6EE; color: #1B1A16; font: 400 17px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -48,10 +49,7 @@ body { background: #FAF6EE; color: #1B1A16; font: 400 17px/1.6 "Helvetica Neue",
 .hours li { display: flex; justify-content: space-between; gap: 18px; padding: 14px 0; border-top: 1px solid #DED5C2; font-size: 16px; }
 .hours span { color: #6E6A5E; font-variant-numeric: tabular-nums; }
 .gal { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 40px; }
-.gal div { aspect-ratio: 1; display: grid; place-items: center; color: rgba(255,255,255,.8);
-  font: 500 11px/1 ui-monospace, Menlo, monospace; letter-spacing: .1em; text-transform: uppercase; }
-.gal :nth-child(1) { background: #6B4A2E; } .gal :nth-child(2) { background: #1F5130; } .gal :nth-child(3) { background: #8A6A2E; }
-.gal :nth-child(4) { background: #2E4A3A; } .gal :nth-child(5) { background: #9A5A32; } .gal :nth-child(6) { background: #4A3A2A; }
+.gal .ph-img { aspect-ratio: 1; overflow: hidden; }
 .form { display: grid; gap: 16px; margin-top: 26px; }
 .form .g2 { display: grid; gap: 16px; } @media (min-width: 560px) { .form .g2 { grid-template-columns: 1fr 1fr; } }
 .form label { font: 500 12px/1 ui-monospace, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; color: #6E6A5E; display: block; margin-bottom: 8px; }
@@ -126,7 +124,7 @@ const body = `
     <h2 class="h2">Bei uns</h2>
     <p class="sub">Zwei Räume und eine Terrasse zum Innenhof. Für Geburtstage und Firmenessen bis 30 Personen reservierbar.</p>
     <div class="gal">
-      <div>Foto</div><div>Foto</div><div>Foto</div><div>Foto</div><div>Foto</div><div>Foto</div>
+      ${photo({set:"restaurant",name:"g1",alt:"Gedeckter Tisch",tone:["#8B6A4A","#573A22"]})}${photo({set:"restaurant",name:"g2",alt:"Innenraum",tone:["#4E7A5C","#1F5130"]})}${photo({set:"restaurant",name:"g3",alt:"Pasta",tone:["#B08A4A","#7A5A22"]})}${photo({set:"restaurant",name:"g4",alt:"Terrasse",tone:["#54705F","#2E4A3A"]})}${photo({set:"restaurant",name:"g5",alt:"Vorspeise",tone:["#B4764C","#7A4526"]})}${photo({set:"restaurant",name:"g6",alt:"Weinkarte",tone:["#6B5A48","#3A2E22"]})}
     </div>
   </div>
 </section>

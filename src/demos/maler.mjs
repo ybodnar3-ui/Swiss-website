@@ -1,4 +1,5 @@
 import { demoShell } from "./shell.mjs";
+import { photo } from "./media.mjs";
 
 const css = `
 body { background: #FBF8F4; color: #221C18; font: 400 17px/1.55 "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -48,14 +49,8 @@ body { background: #FBF8F4; color: #221C18; font: 400 17px/1.55 "Helvetica Neue"
 .gal { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 40px; }
 @media (min-width: 860px) { .gal { grid-template-columns: repeat(4,1fr); } }
 .gal figure { margin: 0; }
-.gal .im { aspect-ratio: 4/3; display: grid; place-items: center; color: rgba(255,255,255,.85);
-  font: 500 12px/1 ui-monospace, Menlo, monospace; letter-spacing: .1em; text-transform: uppercase; }
+.gal .im { aspect-ratio: 4/3; overflow: hidden; background: #E4DCD2; }
 .gal figcaption { font-size: 14px; color: #6B5D52; padding-top: 10px; }
-.gal :nth-child(1) .im { background: #8A6A55; } .gal :nth-child(2) .im { background: #4C5B54; }
-.gal :nth-child(3) .im { background: #B08968; } .gal :nth-child(4) .im { background: #66574C; }
-.gal :nth-child(5) .im { background: #9AA79F; } .gal :nth-child(6) .im { background: #7D5B4A; }
-.gal :nth-child(7) .im { background: #5F6B63; } .gal :nth-child(8) .im { background: #A5917C; }
-
 .two { display: grid; gap: 44px; }
 @media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; gap: 64px; } }
 .steps li { display: grid; grid-template-columns: 42px 1fr; gap: 18px; padding: 20px 0; border-top: 1px solid #E4DCD2; }
@@ -132,14 +127,14 @@ const body = `
     <h2 class="h2">Ausgeführte Projekte</h2>
     <p class="sub">Ein Auszug aus den letzten zwei Jahren. Auf Wunsch zeigen wir Ihnen Referenzen in Ihrer Nähe.</p>
     <div class="gal">
-      <figure><div class="im">Foto</div><figcaption>Reiheneinfamilienhaus, Wädenswil</figcaption></figure>
-      <figure><div class="im">Foto</div><figcaption>Treppenhaus, Zürich Wiedikon</figcaption></figure>
-      <figure><div class="im">Foto</div><figcaption>Fassade, Horgen</figcaption></figure>
-      <figure><div class="im">Foto</div><figcaption>Büroräume, Thalwil</figcaption></figure>
-      <figure><div class="im">Foto</div><figcaption>Altbauwohnung, Zürich Enge</figcaption></figure>
-      <figure><div class="im">Foto</div><figcaption>Kellerabgang, Adliswil</figcaption></figure>
-      <figure><div class="im">Foto</div><figcaption>Gartenhaus, Kilchberg</figcaption></figure>
-      <figure><div class="im">Foto</div><figcaption>Ladenlokal, Zürich Oerlikon</figcaption></figure>
+      <figure><div class="im">${photo({set:"maler",name:"g1",alt:"Reiheneinfamilienhaus, Wädenswil",tone:["#A98A6E","#6B4C34"]})}</div><figcaption>Reiheneinfamilienhaus, Wädenswil</figcaption></figure>
+      <figure><div class="im">${photo({set:"maler",name:"g2",alt:"Treppenhaus, Zürich Wiedikon",tone:["#8C9A92","#4C5B54"]})}</div><figcaption>Treppenhaus, Zürich Wiedikon</figcaption></figure>
+      <figure><div class="im">${photo({set:"maler",name:"g3",alt:"Fassade, Horgen",tone:["#C6A882","#8A6B45"]})}</div><figcaption>Fassade, Horgen</figcaption></figure>
+      <figure><div class="im">${photo({set:"maler",name:"g4",alt:"Büroräume, Thalwil",tone:["#8A7A6C","#514339"]})}</div><figcaption>Büroräume, Thalwil</figcaption></figure>
+      <figure><div class="im">${photo({set:"maler",name:"g5",alt:"Altbauwohnung, Zürich Enge",tone:["#AAB6AE","#6F7C74"]})}</div><figcaption>Altbauwohnung, Zürich Enge</figcaption></figure>
+      <figure><div class="im">${photo({set:"maler",name:"g6",alt:"Kellerabgang, Adliswil",tone:["#A0765E","#6B4635"]})}</div><figcaption>Kellerabgang, Adliswil</figcaption></figure>
+      <figure><div class="im">${photo({set:"maler",name:"g7",alt:"Gartenhaus, Kilchberg",tone:["#8F9B92","#59665E"]})}</div><figcaption>Gartenhaus, Kilchberg</figcaption></figure>
+      <figure><div class="im">${photo({set:"maler",name:"g8",alt:"Ladenlokal, Zürich Oerlikon",tone:["#BBA88F","#7E6C55"]})}</div><figcaption>Ladenlokal, Zürich Oerlikon</figcaption></figure>
     </div>
   </div>
 </section>
