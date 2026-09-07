@@ -116,6 +116,26 @@
       }
     ]
   },
+  "guarantee": {
+    "kicker": "Garantie",
+    "title": "Sieben Tage. Sonst zahlen Sie nichts.",
+    "lead": "Ist Ihre Website am achten Arbeitstag nicht online, gehört sie Ihnen gratis. Nicht rabattiert — gratis.",
+    "points": [
+      {
+        "t": "Keine Vorauszahlung",
+        "d": "Die Rechnung kommt nach der Aufschaltung. Vorher fliesst kein Franken."
+      },
+      {
+        "t": "Die Frist beginnt bei Ihnen",
+        "d": "Gezählt wird ab dem Tag, an dem Ihre Inhalte vollständig bei uns sind. Was wir brauchen, sagen wir Ihnen vorher."
+      },
+      {
+        "t": "Der Preis steht",
+        "d": "990 Franken sind 990 Franken. Es gibt keine Nachträge für Dinge, die wir zu rechnen vergessen haben."
+      }
+    ],
+    "cta": "Offerte anfragen"
+  },
   "prices": {
     "kicker": "Preise",
     "title": "Alle Preise offen",
@@ -170,6 +190,16 @@
         ]
       ]
     }
+  },
+  "anchor": {
+    "title": "Was Sie bei uns nicht mitbezahlen",
+    "items": [
+      "Projektleitung, die zwischen Ihnen und der Arbeit sitzt",
+      "Büromiete an zentraler Lage",
+      "Aussendienst, der Ihnen etwas verkauft",
+      "Agentur-Marge"
+    ],
+    "note": "Darum kostet bei uns das, wofür eine klassische Agentur das Vier- bis Fünffache verlangt."
   },
   "maintenance": {
     "kicker": "Danach",
@@ -284,6 +314,38 @@
       }
     ]
   },
+  "proof": {
+    "kicker": "Beweis",
+    "title": "Diese Seite ist unsere Referenz",
+    "lead": "Sie müssen uns nicht glauben, wie wir arbeiten. Schauen Sie sich an, was wir für uns selbst gebaut haben — und messen Sie jede Zahl selbst nach.",
+    "stats": [
+      {
+        "n": "{weight}",
+        "u": "kB",
+        "t": "Gesamtgewicht",
+        "d": "Die ganze Startseite, mit Stylesheet und allen Bildern. Ein durchschnittlicher Firmenauftritt wiegt fünfzehnmal so viel."
+      },
+      {
+        "n": "0",
+        "u": "",
+        "t": "Tracker und Cookies",
+        "d": "Kein Google, kein Werbenetz, kein Cookie-Banner. Alles wird vom Server Ihrer Website ausgeliefert."
+      },
+      {
+        "n": "4",
+        "u": "",
+        "t": "Sprachen",
+        "d": "Deutsch, Französisch, Italienisch, Englisch — dieselbe Arbeit, die wir für Sie machen."
+      },
+      {
+        "n": "{pages}",
+        "u": "",
+        "t": "Seiten",
+        "d": "Alle aus einer einzigen Quelle gebaut. Ändert sich ein Preis, ändert er sich in jeder Sprache."
+      }
+    ],
+    "note": "Nachprüfbar: Rechtsklick, «Seitenquelltext anzeigen». Oder geben Sie diese Adresse auf pagespeed.web.dev ein."
+  },
   "faq": {
     "kicker": "Fragen",
     "title": "Was Kunden uns fragen",
@@ -357,6 +419,11 @@
     "datenschutz": "Datenschutz",
     "agb": "AGB",
     "rights": "Alle Rechte vorbehalten."
+  },
+  "mobilebar": {
+    "call": "Anrufen",
+    "whatsapp": "WhatsApp",
+    "quote": "Offerte"
   },
   "legal": {
     "placeholderNotice": "Diese Angaben sind noch nicht vollständig. Vor der Aufschaltung müssen sie durch die tatsächlichen Daten ersetzt werden.",
@@ -534,5 +601,12 @@
     "title": "Seite nicht gefunden",
     "lead": "Diese Seite gibt es nicht — oder nicht mehr.",
     "cta": "Zur Startseite"
+  },
+  "analysis": {
+    "kicker": "Kostenlos",
+    "title": "Sie haben schon eine Website? Wir schauen sie uns an.",
+    "lead": "Schicken Sie uns den Link. Innert 24 Stunden erhalten Sie eine schriftliche Einschätzung: was funktioniert, was Ihre Kunden vertreibt und was es kosten würde, das zu beheben. Kostenlos, auch wenn Sie danach nichts bei uns bestellen. Sehen wir keinen Grund für einen Neubau, schreiben wir Ihnen das.",
+    "cta": "Website prüfen lassen",
+    "prefill": "Meine aktuelle Website: "
   }
 }

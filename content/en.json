@@ -116,6 +116,26 @@
       }
     ]
   },
+  "guarantee": {
+    "kicker": "Guarantee",
+    "title": "Seven days. Or you pay nothing.",
+    "lead": "If your website is not live on the eighth working day, it is yours free. Not discounted — free.",
+    "points": [
+      {
+        "t": "No deposit",
+        "d": "The invoice comes after the site goes live. Before that, not a franc moves."
+      },
+      {
+        "t": "The clock starts with you",
+        "d": "It runs from the day your content reaches us in full. We tell you in advance what we need."
+      },
+      {
+        "t": "The price holds",
+        "d": "990 francs is 990 francs. There are no add-on invoices for things we forgot to count."
+      }
+    ],
+    "cta": "Request a quote"
+  },
   "prices": {
     "kicker": "Pricing",
     "title": "Every price in the open",
@@ -170,6 +190,16 @@
         ]
       ]
     }
+  },
+  "anchor": {
+    "title": "What you are not paying for here",
+    "items": [
+      "A project manager sitting between you and the work",
+      "Office rent in a central location",
+      "A sales rep whose job is to sell you something",
+      "Agency margin"
+    ],
+    "note": "That is why this costs what a conventional agency charges four to five times as much for."
   },
   "maintenance": {
     "kicker": "Afterwards",
@@ -284,6 +314,38 @@
       }
     ]
   },
+  "proof": {
+    "kicker": "Proof",
+    "title": "This site is our reference",
+    "lead": "You don't have to take our word for how we work. Look at what we built for ourselves — and check every number yourself.",
+    "stats": [
+      {
+        "n": "{weight}",
+        "u": "kB",
+        "t": "Total weight",
+        "d": "The whole home page, stylesheet and every image included. An average company site weighs fifteen times as much."
+      },
+      {
+        "n": "0",
+        "u": "",
+        "t": "Trackers and cookies",
+        "d": "No Google, no ad network, no cookie banner. Everything is served from your own site's server."
+      },
+      {
+        "n": "4",
+        "u": "",
+        "t": "Languages",
+        "d": "German, French, Italian, English — exactly the work we do for you."
+      },
+      {
+        "n": "{pages}",
+        "u": "",
+        "t": "Pages",
+        "d": "All built from a single source. Change a price and it changes in every language."
+      }
+    ],
+    "note": "Check it yourself: right-click, «view page source». Or put this address into pagespeed.web.dev."
+  },
   "faq": {
     "kicker": "Questions",
     "title": "What clients ask us",
@@ -357,6 +419,11 @@
     "datenschutz": "Privacy",
     "agb": "Terms",
     "rights": "All rights reserved."
+  },
+  "mobilebar": {
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "quote": "Quote"
   },
   "legal": {
     "placeholderNotice": "These details are not yet complete. They must be replaced with the actual data before launch.",
@@ -534,5 +601,12 @@
     "title": "Page not found",
     "lead": "This page does not exist — or no longer does.",
     "cta": "Back to the home page"
+  },
+  "analysis": {
+    "kicker": "Free",
+    "title": "Already have a website? We'll look at it.",
+    "lead": "Send us the link. Within 24 hours you get a written assessment: what works, what drives your customers away, and what it would cost to fix. Free, even if you order nothing from us afterwards. If we see no reason to rebuild it, we will tell you so.",
+    "cta": "Have my site reviewed",
+    "prefill": "My current website: "
   }
 }

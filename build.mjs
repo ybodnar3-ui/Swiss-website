@@ -2,7 +2,7 @@
 // Cantelo static site builder. No dependencies — Node 18+ only.
 // Reads content/*.json + src/*, writes dist/.
 
-import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, readdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -139,9 +139,37 @@ ${site.languages.map((l) => `<a href="${urlPath(l, "home")}" hreflang="${l}">${c
 
 // --- static assets --------------------------------------------------------
 mkdirSync(join(dist, "assets"), { recursive: true });
+if (existsSync(join(root, "assets"))) cpSync(join(root, "assets"), join(dist, "assets"), { recursive: true });
 cpSync(join(root, "src/styles.css"), join(dist, "assets/styles.css"));
 cpSync(join(root, "brand"), join(dist, "brand"), { recursive: true });
 cpSync(join(root, "brand/cantelo-favicon.svg"), join(dist, "brand/favicon.svg"));
+
+// --- real numbers for the proof section -----------------------------------
+// Measured from the build output, so the claims on the page cannot drift away
+// from what the site actually ships.
+{
+  // Everything the home page actually transfers: markup, stylesheet, favicon
+  // and every screenshot it shows. Not just the shell.
+  const shotsDir = join(dist, "assets/shots");
+  const shots = existsSync(shotsDir)
+    ? readdirSync(shotsDir).reduce((n, f) => n + statSync(join(shotsDir, f)).size, 0)
+    : 0;
+  const bytes =
+    statSync(join(dist, urlPath(site.defaultLang, "home"), "index.html")).size +
+    statSync(join(dist, "assets/styles.css")).size +
+    statSync(join(dist, "brand/favicon.svg")).size +
+    shots;
+  const weight = Math.round(bytes / 1024);
+  const pageCount = written.filter((f) => f.endsWith("index.html")).length;
+  for (const rel of written) {
+    if (!rel.endsWith(".html")) continue;
+    const full = join(dist, rel);
+    const html = readFileSync(full, "utf8");
+    const out = html.replace(/\{weight\}/g, String(weight)).replace(/\{pages\}/g, String(pageCount));
+    if (out !== html) writeFileSync(full, out);
+  }
+  console.log(`  proof: ${weight} kB page weight, ${pageCount} pages`);
+}
 
 // --- sitemap + robots -----------------------------------------------------
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

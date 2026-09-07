@@ -88,6 +88,18 @@ function header({ site, c, lang, page, langs }) {
 </header>`;
 }
 
+/** Fixed bottom bar on phones. Swiss trades phone; they do not fill in forms,
+ *  and the contact section sits fifteen screens down. */
+function mobileBar({ site, c, lang }) {
+  const m = c.mobilebar;
+  const wa = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(c.contact.whatsappText)}`;
+  return `<nav class="mbar" aria-label="${esc(c.nav.kontakt)}">
+  <a href="tel:${esc(site.phoneHref)}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5.2 2.5 6.8 5.6 5.4 7a9 9 0 0 0 3.6 3.6l1.4-1.4 3.1 1.6v2.4c0 .6-.5 1.1-1.1 1a12.5 12.5 0 0 1-11-11c-.1-.6.4-1.1 1-1.1z"/></svg><span>${esc(m.call)}</span></a>
+  <a href="${wa}" rel="noopener"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2.5 13.5 3.4 10a5.8 5.8 0 1 1 2.2 2.2z"/></svg><span>${esc(m.whatsapp)}</span></a>
+  <a class="mbar__cta" href="${path(lang, "home")}#kontakt"><span>${esc(m.quote)}</span></a>
+</nav>`;
+}
+
 function footer({ site, c, lang }) {
   const year = new Date().getFullYear();
   return `<footer class="ftr">
@@ -131,6 +143,12 @@ const SCRIPT = `<script>
     b.setAttribute('aria-expanded',String(!open));
     m.setAttribute('data-open',String(!open));
   });}
+  document.querySelectorAll('[data-prefill]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var t=document.getElementById('f-msg');
+      if(t&&!t.value){t.value=a.dataset.prefill;setTimeout(function(){t.focus();t.setSelectionRange(t.value.length,t.value.length);},700);}
+    });
+  });
   var f=document.getElementById('contact-form');
   if(f){f.addEventListener('submit',function(e){
     e.preventDefault();
@@ -157,6 +175,7 @@ ${header({ site, c, lang, page: pageKey, langs })}
 <main id="main">
 ${body}
 </main>
+${mobileBar({ site, c, lang })}
 ${footer({ site, c, lang })}
 ${SCRIPT}
 </body>

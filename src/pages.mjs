@@ -13,11 +13,14 @@ export const home = (c, lang, site) =>
   [
     S.hero(c, lang),
     S.included(c),
+    S.guarantee(c, lang),
     S.examples(c, lang),
+    S.proof(c),
+    S.analysis(c, lang),
     S.process(c),
     S.prices(c, lang),
     S.maintenance(c),
-    S.faq(c),
+    S.faq(c, lang),
     S.contact(c, lang, site),
   ].join("\n");
 
@@ -31,14 +34,15 @@ export const preise = (c, lang, site) =>
       </div>
     </div></section>`,
     S.included(c),
+    S.guarantee(c, lang),
     S.prices(c, lang, { header: false }),
     S.maintenance(c),
-    S.faq(c),
+    S.faq(c, lang),
     S.contact(c, lang, site),
   ].join("\n");
 
 export const beispiele = (c, lang, site) =>
-  [S.examples(c, lang, { full: true }), S.process(c), S.contact(c, lang, site)].join("\n");
+  [S.examples(c, lang, { full: true }), S.proof(c), S.analysis(c, lang), S.process(c), S.contact(c, lang, site)].join("\n");
 
 function doc(c, lang, { title, intro, blocks, notice }) {
   return `<section class="section section--tight">

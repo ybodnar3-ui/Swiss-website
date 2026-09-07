@@ -65,6 +65,34 @@ must have the same keys, and the build says so if it does not.
 Adding a page means adding a slug to `SLUGS` in `src/layout.mjs`, a renderer in
 `src/pages.mjs`, and an entry to `PAGES` in `build.mjs`.
 
+## Regenerating the example screenshots
+
+The cards on the examples page show real screenshots of the three design
+concepts, rendered from the concepts themselves. Regenerate them whenever a
+concept changes:
+
+```bash
+node build.mjs && node scripts/shots.mjs
+```
+
+The script strips the concept banner before shooting — the card should show
+the site as a client would see it — and quantises the result to a 128-colour
+palette, which is about a third of the bytes with no visible loss.
+
+Needs Google Chrome, `sips` and Python with Pillow.
+
+## The proof section
+
+The numbers in the proof section are measured from the build output, not
+typed into the content files. `build.mjs` replaces `{weight}` with the real
+transferred weight of the home page (markup, stylesheet, favicon and every
+screenshot) and `{pages}` with the real page count. They cannot drift away
+from what the site ships.
+
+If you change the copy around them, keep the comparison honest: at 146 kB
+the "fifteen times" claim holds against a roughly 2.2 MB average page. Add
+weight and that multiple has to come down.
+
 ## Regenerating the OG image
 
 `brand/og.svg` is a square canvas whose artwork sits in the centre 630-pixel

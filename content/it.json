@@ -116,6 +116,26 @@
       }
     ]
   },
+  "guarantee": {
+    "kicker": "Garanzia",
+    "title": "Sette giorni. Altrimenti non pagate nulla.",
+    "lead": "Se l'ottavo giorno lavorativo il vostro sito non è online, è vostro gratis. Non scontato — gratis.",
+    "points": [
+      {
+        "t": "Nessun acconto",
+        "d": "La fattura arriva dopo la messa online. Prima non si muove un franco."
+      },
+      {
+        "t": "Il termine parte da voi",
+        "d": "Decorre dal giorno in cui i vostri contenuti ci arrivano al completo. Quello che ci serve ve lo diciamo prima."
+      },
+      {
+        "t": "Il prezzo è fermo",
+        "d": "990 franchi sono 990 franchi. Nessun supplemento per quello che ci fossimo dimenticati di calcolare."
+      }
+    ],
+    "cta": "Richiedere un'offerta"
+  },
   "prices": {
     "kicker": "Prezzi",
     "title": "Tutti i prezzi in chiaro",
@@ -170,6 +190,16 @@
         ]
       ]
     }
+  },
+  "anchor": {
+    "title": "Che cosa non pagate da noi",
+    "items": [
+      "Una direzione di progetto seduta fra voi e il lavoro",
+      "L'affitto di un ufficio in centro",
+      "Un venditore incaricato di piazzarvi qualcosa",
+      "Il margine d'agenzia"
+    ],
+    "note": "Per questo da noi costa quello che un'agenzia classica fattura quattro o cinque volte tanto."
   },
   "maintenance": {
     "kicker": "In seguito",
@@ -284,6 +314,38 @@
       }
     ]
   },
+  "proof": {
+    "kicker": "Prova",
+    "title": "Questo sito è la nostra referenza",
+    "lead": "Non dovete crederci sulla parola. Guardate che cosa abbiamo costruito per noi stessi — e verificate ogni cifra da soli.",
+    "stats": [
+      {
+        "n": "{weight}",
+        "u": "kB",
+        "t": "Peso totale",
+        "d": "L'intera pagina iniziale, foglio di stile e immagini compresi. Un sito aziendale medio pesa quindici volte tanto."
+      },
+      {
+        "n": "0",
+        "u": "",
+        "t": "Tracker e cookie",
+        "d": "Niente Google, nessun circuito pubblicitario, nessun banner sui cookie. Tutto viene servito dal server del vostro sito."
+      },
+      {
+        "n": "4",
+        "u": "",
+        "t": "Lingue",
+        "d": "Tedesco, francese, italiano, inglese — esattamente il lavoro che facciamo per voi."
+      },
+      {
+        "n": "{pages}",
+        "u": "",
+        "t": "Pagine",
+        "d": "Tutte costruite da un'unica fonte. Se cambia un prezzo, cambia in ogni lingua."
+      }
+    ],
+    "note": "Verificabile: tasto destro, « visualizza sorgente pagina ». Oppure inserite questo indirizzo su pagespeed.web.dev."
+  },
   "faq": {
     "kicker": "Domande",
     "title": "Quello che i clienti ci chiedono",
@@ -357,6 +419,11 @@
     "datenschutz": "Protezione dei dati",
     "agb": "CG",
     "rights": "Tutti i diritti riservati."
+  },
+  "mobilebar": {
+    "call": "Telefonare",
+    "whatsapp": "WhatsApp",
+    "quote": "Offerta"
   },
   "legal": {
     "placeholderNotice": "Questi dati non sono ancora completi. Prima della messa online devono essere sostituiti con i dati effettivi.",
@@ -534,5 +601,12 @@
     "title": "Pagina non trovata",
     "lead": "Questa pagina non esiste — o non esiste più.",
     "cta": "Alla pagina iniziale"
+  },
+  "analysis": {
+    "kicker": "Gratuito",
+    "title": "Avete già un sito? Ce lo guardiamo noi.",
+    "lead": "Mandateci il link. Entro 24 ore ricevete una valutazione scritta: che cosa funziona, che cosa allontana i vostri clienti e quanto costerebbe rimediare. Gratuito, anche se poi non ordinate nulla da noi. Se non vediamo motivo di rifarlo, ve lo scriviamo.",
+    "cta": "Far analizzare il sito",
+    "prefill": "Il mio sito attuale: "
   }
 }
