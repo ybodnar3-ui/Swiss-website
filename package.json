@@ -1,0 +1,12 @@
+{
+  "name": "cantelo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marketing site for Cantelo — websites for small Swiss businesses.",
+  "scripts": {
+    "build": "node build.mjs --staging",
+    "build:production": "node build.mjs",
+    "preview": "node build.mjs --staging && node scripts/preview-index.mjs && python3 -m http.server 4173 --directory dist"
+  },
+  "engines": { "node": ">=18" }
+}

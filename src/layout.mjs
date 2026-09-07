@@ -37,6 +37,7 @@ function head({ site, c, page, canonical, langs }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(meta.title)}</title>
 <meta name="description" content="${esc(meta.description)}">
+${site.staging ? '<meta name="robots" content="noindex, nofollow">\n' : ""}
 <link rel="canonical" href="${site.baseUrl}${canonical}">
 ${alternates}
   <link rel="alternate" hreflang="x-default" href="${site.baseUrl}${path(site.defaultLang, page)}">

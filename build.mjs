@@ -14,7 +14,12 @@ const root = dirname(fileURLToPath(import.meta.url));
 const dist = join(root, "dist");
 const read = (p) => JSON.parse(readFileSync(join(root, p), "utf8"));
 
+// Staging builds carry noindex and a blocking robots.txt: the site has no
+// domain and no legal data yet, and must not be indexed in that state.
+const STAGING = process.argv.includes("--staging") || process.env.CANTELO_STAGING === "1";
+
 const site = read("content/site.json");
+site.staging = STAGING;
 // A language without a content file is skipped with a warning rather than
 // failing the build, so a translation can be added incrementally.
 const available = site.languages.filter((l) => {
@@ -154,7 +159,12 @@ ${site.languages.map((l) => `    <xhtml:link rel="alternate" hreflang="${l}" hre
 ${demos.map((d) => `  <url><loc>${site.baseUrl}/beispiele/${d.slug}/</loc><priority>0.5</priority></url>`).join("\n")}
 </urlset>`;
 write("sitemap.xml", sitemap);
-write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${site.baseUrl}/sitemap.xml\n`);
+write(
+  "robots.txt",
+  STAGING
+    ? `# Staging build — not for indexing.\nUser-agent: *\nDisallow: /\n`
+    : `User-agent: *\nAllow: /\n\nSitemap: ${site.baseUrl}/sitemap.xml\n`
+);
 
 // --- internal link check --------------------------------------------------
 const htmlFiles = [];
@@ -188,4 +198,5 @@ if (broken) {
   console.error(`\n  ✗ ${broken} broken internal link(s)\n`);
   process.exit(1);
 }
-console.log(`  ✓ no broken internal links\n`);
+console.log(`  ✓ no broken internal links`);
+console.log(STAGING ? "  ! staging build: noindex + robots Disallow\n" : "");
