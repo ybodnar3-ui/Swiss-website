@@ -444,3 +444,31 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .mbar__cta { background: var(--paper); color: var(--ink) !important; }
   body { padding-bottom: 54px; }
 }
+
+/* ---------- industry entry tiles ---------- */
+
+.branches { padding-block: clamp(40px, 4.5vw, 64px); }
+.tiles { display: grid; margin-top: 24px; border-top: 1px solid var(--rule); }
+@media (min-width: 620px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .tiles { grid-template-columns: repeat(4, 1fr); } }
+.tiles li { border-bottom: 1px solid var(--rule); }
+@media (min-width: 620px) { .tiles li { border-right: 1px solid var(--rule); } .tiles li:nth-child(2n) { border-right: 0; } }
+@media (min-width: 1000px) {
+  .tiles li { border-right: 1px solid var(--rule); }
+  .tiles li:nth-child(2n) { border-right: 1px solid var(--rule); }
+  .tiles li:last-child { border-right: 0; }
+}
+.tiles a {
+  display: flex; flex-direction: column; gap: 7px;
+  padding: 22px 22px 26px 0; text-decoration: none; height: 100%;
+  transition: background 140ms ease, padding-left 140ms ease;
+}
+@media (min-width: 620px) { .tiles a { padding-left: 22px; } .tiles li:nth-child(2n+1) a { padding-left: 0; } }
+@media (min-width: 1000px) { .tiles li:nth-child(2n+1) a { padding-left: 22px; } .tiles li:first-child a { padding-left: 0; } }
+.tiles h3 { font-size: 1.1875rem; letter-spacing: -0.026em; }
+.tiles p { font-size: 0.875rem; line-height: 1.45; color: var(--muted); }
+.tiles__go { margin-top: auto; padding-top: 14px; display: block; color: var(--muted); }
+.tiles__go .arrow { width: 15px; height: 15px; transition: transform 160ms ease; }
+.tiles a:hover { background: var(--faint); }
+.tiles a:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
+.tiles a:hover .arrow { transform: translateX(4px); color: var(--ink); }

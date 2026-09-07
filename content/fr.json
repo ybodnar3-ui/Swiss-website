@@ -50,6 +50,31 @@
     "Prix fixe, sans supplément",
     "Domaine .ch à votre nom"
   ],
+  "branches": {
+    "kicker": "Pour qui",
+    "items": [
+      {
+        "t": "Artisanat",
+        "d": "Peintre, plâtrier, menuisier, sanitaire",
+        "href": "demo:maler"
+      },
+      {
+        "t": "Cabinet",
+        "d": "Dentiste, physiothérapie, médecin",
+        "href": "demo:zahnarzt"
+      },
+      {
+        "t": "Restauration",
+        "d": "Restaurant, café, take-away",
+        "href": "demo:restaurant"
+      },
+      {
+        "t": "Votre branche",
+        "d": "Fiduciaire, coiffeur, auto-école, garage",
+        "href": "contact"
+      }
+    ]
+  },
   "included": {
     "kicker": "La prestation",
     "title": "Ce que comprennent les 990 CHF",

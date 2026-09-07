@@ -165,7 +165,11 @@ cpSync(join(root, "brand/cantelo-favicon.svg"), join(dist, "brand/favicon.svg"))
     if (!rel.endsWith(".html")) continue;
     const full = join(dist, rel);
     const html = readFileSync(full, "utf8");
-    const out = html.replace(/\{weight\}/g, String(weight)).replace(/\{pages\}/g, String(pageCount));
+    const own = ("/" + rel.replace(/index\.html$/, "").replace(/\\/g, "/")).replace(/\/{2,}/g, "/");
+    const out = html
+      .replace(/\{weight\}/g, String(weight))
+      .replace(/\{pages\}/g, String(pageCount))
+      .replace(/\{page\}/g, own);
     if (out !== html) writeFileSync(full, out);
   }
   console.log(`  proof: ${weight} kB page weight, ${pageCount} pages`);

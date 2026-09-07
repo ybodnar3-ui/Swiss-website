@@ -149,6 +149,8 @@ const SCRIPT = `<script>
       if(t&&!t.value){t.value=a.dataset.prefill;setTimeout(function(){t.focus();t.setSelectionRange(t.value.length,t.value.length);},700);}
     });
   });
+  var pg=document.getElementById('f-page');
+  if(pg){pg.value=location.pathname+location.search;}
   var f=document.getElementById('contact-form');
   if(f){f.addEventListener('submit',function(e){
     e.preventDefault();

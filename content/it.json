@@ -50,6 +50,31 @@
     "Prezzo fisso, senza supplementi",
     "Dominio .ch a vostro nome"
   ],
+  "branches": {
+    "kicker": "Per chi",
+    "items": [
+      {
+        "t": "Artigianato",
+        "d": "Pittore, gessatore, falegname, sanitari",
+        "href": "demo:maler"
+      },
+      {
+        "t": "Studi",
+        "d": "Dentista, fisioterapia, medico di famiglia",
+        "href": "demo:zahnarzt"
+      },
+      {
+        "t": "Ristorazione",
+        "d": "Ristorante, caffè, take-away",
+        "href": "demo:restaurant"
+      },
+      {
+        "t": "Il vostro settore",
+        "d": "Fiduciaria, parrucchiere, autoscuola, garage",
+        "href": "contact"
+      }
+    ]
+  },
   "included": {
     "kicker": "La prestazione",
     "title": "Che cosa comprendono i 990 CHF",

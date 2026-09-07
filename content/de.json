@@ -50,6 +50,31 @@
     "Festpreis, keine Nachträge",
     ".ch-Domain auf Ihren Namen"
   ],
+  "branches": {
+    "kicker": "Für wen",
+    "items": [
+      {
+        "t": "Handwerk",
+        "d": "Maler, Gipser, Schreiner, Sanitär",
+        "href": "demo:maler"
+      },
+      {
+        "t": "Praxis",
+        "d": "Zahnarzt, Physiotherapie, Hausarzt",
+        "href": "demo:zahnarzt"
+      },
+      {
+        "t": "Gastronomie",
+        "d": "Restaurant, Café, Take-away",
+        "href": "demo:restaurant"
+      },
+      {
+        "t": "Ihre Branche",
+        "d": "Treuhand, Coiffeur, Fahrschule, Garage",
+        "href": "contact"
+      }
+    ]
+  },
   "included": {
     "kicker": "Das Angebot",
     "title": "Was für 990 CHF enthalten ist",

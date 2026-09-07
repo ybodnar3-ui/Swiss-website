@@ -12,6 +12,7 @@ const hasPlaceholder = (blocks) => blocks.some((b) => b.p.some((t) => /\[[A-ZÃ„Ã
 export const home = (c, lang, site) =>
   [
     S.hero(c, lang),
+    S.branches(c, lang),
     S.included(c),
     S.guarantee(c, lang),
     S.examples(c, lang),

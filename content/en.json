@@ -50,6 +50,31 @@
     "Fixed price, no add-on invoices",
     ".ch domain in your name"
   ],
+  "branches": {
+    "kicker": "Who for",
+    "items": [
+      {
+        "t": "Trades",
+        "d": "Painter, plasterer, carpenter, plumber",
+        "href": "demo:maler"
+      },
+      {
+        "t": "Practices",
+        "d": "Dentist, physiotherapy, GP",
+        "href": "demo:zahnarzt"
+      },
+      {
+        "t": "Hospitality",
+        "d": "Restaurant, café, take-away",
+        "href": "demo:restaurant"
+      },
+      {
+        "t": "Your trade",
+        "d": "Accountancy, hairdresser, driving school, garage",
+        "href": "contact"
+      }
+    ]
+  },
   "included": {
     "kicker": "The offer",
     "title": "What 990 CHF includes",

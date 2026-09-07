@@ -219,6 +219,7 @@ export function contact(c, lang, site) {
         <input type="hidden" name="access_key" value="${esc(site.formKey)}">
         <input type="hidden" name="subject" value="${esc(site.name)} — ${esc(c.contact.kicker)} (${lang})">
         <input type="hidden" name="from_name" value="${esc(site.domain)}">
+        <input type="hidden" name="page" id="f-page" value="{page}">
         <div class="hp" aria-hidden="true"><label>Botcheck<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
         <div class="field">
           <label for="f-name">${esc(f.name)}</label>
@@ -306,6 +307,31 @@ export function analysis(c, lang) {
         </div>
       </div>
     </div>
+  </div>
+</section>`;
+}
+
+/** Entry tiles directly under the hero: the visitor has to recognise his own
+ *  trade within seconds. Hrefs are symbolic so they can be repointed at
+ *  dedicated industry pages later without touching the copy. */
+export function branches(c, lang) {
+  const b = c.branches;
+  const href = (h) =>
+    h === "contact" ? `${path(lang, "home")}#kontakt` : demoPath(h.replace("demo:", ""));
+  return `<section class="section section--tight branches">
+  <div class="wrap">
+    <p class="kicker">${esc(b.kicker)}</p>
+    <ul class="tiles">
+      ${b.items
+        .map(
+          (i) => `<li><a href="${href(i.href)}">
+        <h3>${esc(i.t)}</h3>
+        <p>${esc(i.d)}</p>
+        <span class="tiles__go">${icon.arrow}</span>
+      </a></li>`
+        )
+        .join("\n      ")}
+    </ul>
   </div>
 </section>`;
 }

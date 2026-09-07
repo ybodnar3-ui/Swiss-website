@@ -58,14 +58,14 @@ ${css}
     <span class="cbar__txt">${esc(b.text.replace("{name}", name))}</span>
     <span class="cbar__links">
       <a href="/de/beispiele/">${esc(b.back)}</a>
-      <a href="/de/#kontakt">${esc(b.cta)}</a>
+      <a href="/de/?von=${slug}#kontakt">${esc(b.cta)}</a>
     </span>
   </div>
 </div>
 ${body}
 <div class="cfoot">
   <strong>${esc(b.label)} — ${esc(site.name)}</strong>
-  <p>${esc(b.text.replace("{name}", name))} <a href="/de/#kontakt">${esc(b.cta)}</a></p>
+  <p>${esc(b.text.replace("{name}", name))} <a href="/de/?von=${slug}#kontakt">${esc(b.cta)}</a></p>
 </div>
 </body>
 </html>`;

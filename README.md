@@ -81,6 +81,19 @@ palette, which is about a third of the bytes with no visible loss.
 
 Needs Google Chrome, `sips` and Python with Pillow.
 
+## Industry tiles
+
+The tiles under the hero exist so a visitor recognises his own trade in the
+first seconds. They currently point at the matching design concept. When
+dedicated industry pages exist, only the `href` values in the `branches`
+block of each content file change — `demo:<slug>` and `contact` are resolved
+in `src/sections.mjs`, the copy stays put.
+
+Industry pages are the natural next step, and they are data rather than
+code: a renderer plus one JSON file per trade. Resist multiplying trade by
+town — near-identical pages differing only in a place name are doorway
+pages, and they are penalised at the domain level.
+
 ## The proof section
 
 The numbers in the proof section are measured from the build output, not
@@ -127,6 +140,13 @@ without a server of our own. To switch it on:
 3. Put it in `content/site.json` as `formKey`, replacing
    `REPLACE_WITH_WEB3FORMS_ACCESS_KEY`.
 4. Rebuild, deploy, and send a test enquiry through the live form.
+
+Every enquiry carries a `page` field with the path it was sent from, so the
+email tells you whether the lead came from `/de/`, `/de/preise/` or one of
+the design concepts. Links from a concept back to the contact form add
+`?von=<slug>`, which lands in the same field. That is attribution without a
+single tracker or cookie — which matters, because the site states in public
+that it has neither.
 
 The free tier covers 250 submissions per month. The markup already carries a
 honeypot field for spam, and the page falls back to showing the email address
