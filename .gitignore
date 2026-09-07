@@ -18,3 +18,4 @@ out/
 # Local tooling state
 .claude/settings.local.json
 .planning/HANDOFF.json
+.vercel
