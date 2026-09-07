@@ -65,6 +65,31 @@ must have the same keys, and the build says so if it does not.
 Adding a page means adding a slug to `SLUGS` in `src/layout.mjs`, a renderer in
 `src/pages.mjs`, and an entry to `PAGES` in `build.mjs`.
 
+## Photographs in the design concepts
+
+Every image position in a concept is a slot. It renders a real photograph
+when `assets/demo/<set>/<name>.jpg` exists and a tonal placeholder in the
+concept's own palette when it does not, so filling the concepts in is a
+matter of putting files in that folder.
+
+To fetch them from Pexels, put a free key from https://www.pexels.com/api/
+into `.env.local` (gitignored) and run:
+
+```bash
+node scripts/photos.mjs           # all sets
+node scripts/photos.mjs maler     # one set
+```
+
+The script crops each photo to its slot's aspect ratio, compresses it, and
+writes `assets/demo/credits.json` with the photographer and source URL of
+every file. The Pexels licence permits commercial use without attribution;
+the credits exist so the provenance of anything on a public page can be
+produced on request.
+
+Team portraits are deliberately **not** photographs. Putting an identifiable
+person's face on a fictional practice's team page as a named dentist is not
+something a stock licence covers, so those slots stay monograms.
+
 ## Regenerating the example screenshots
 
 The cards on the examples page show real screenshots of the three design

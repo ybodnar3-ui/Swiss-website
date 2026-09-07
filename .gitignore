@@ -19,3 +19,6 @@ out/
 .claude/settings.local.json
 .planning/HANDOFF.json
 .vercel
+
+# Local secrets
+.env.local
