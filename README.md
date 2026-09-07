@@ -76,6 +76,34 @@ qlmanage -t -s 1200 -o /tmp brand/og.svg
 sips -c 630 1200 /tmp/og.svg.png --out brand/og.png
 ```
 
+## Deployment
+
+Live on Vercel at https://cantelo.vercel.app, connected to this GitHub
+repository — a push to `main` redeploys.
+
+`npm run build` carries `--staging`, which adds `noindex, nofollow` to every
+page and a blocking `robots.txt`. That is deliberate: the site has no domain
+and its legal pages hold placeholders, and it must not be indexed in that
+state. Once the domain is registered and the legal data filled in, change
+`buildCommand` in `vercel.json` to `npm run build:production` and update
+`baseUrl` in `content/site.json`.
+
+## The contact form
+
+The form posts to Web3Forms, which forwards submissions to an email address
+without a server of our own. To switch it on:
+
+1. Go to https://web3forms.com, enter the address enquiries should reach, and
+   confirm the mail that arrives. No account is needed.
+2. Copy the access key you are given.
+3. Put it in `content/site.json` as `formKey`, replacing
+   `REPLACE_WITH_WEB3FORMS_ACCESS_KEY`.
+4. Rebuild, deploy, and send a test enquiry through the live form.
+
+The free tier covers 250 submissions per month. The markup already carries a
+honeypot field for spam, and the page falls back to showing the email address
+if the request fails.
+
 ## Before launch
 
 These are blocking. The Impressum and the privacy policy currently carry
