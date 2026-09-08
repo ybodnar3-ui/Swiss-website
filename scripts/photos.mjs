@@ -36,13 +36,13 @@ const SETS = {
     ratio: [4, 3], width: 720,
     slots: [
       ["g1", "modern house exterior facade"],
-      ["g2", "staircase interior white wall"],
-      ["g3", "apartment building facade renovation"],
+      ["g2", "apartment building stairwell white minimal"],
+      ["g3", "modern residential building facade plaster"],
       ["g4", "minimal office interior white walls"],
-      ["g5", "living room interior painted wall"],
-      ["g6", "hallway interior minimal"],
+      ["g5", "empty room parquet floor white walls"],
+      ["g6", "concrete basement stairs interior"],
       ["g7", "garden shed wooden exterior"],
-      ["g8", "small shop interior"],
+      ["g8", "empty retail space interior white"],
     ],
   },
   restaurant: {
@@ -67,6 +67,7 @@ const credits = existsSync(join(outRoot, "credits.json"))
   : {};
 
 const only = process.argv[2];
+const wanted = new Set(process.argv.slice(3));   // named slots are refetched
 const sets = only ? { [only]: SETS[only] } : SETS;
 if (only && !SETS[only]) { console.error(`  ✗ unknown set "${only}"`); process.exit(1); }
 
@@ -77,6 +78,10 @@ for (const [set, cfg] of Object.entries(sets)) {
   const orientation = rw > rh ? "landscape" : rw === rh ? "square" : "portrait";
 
   for (const [name, query] of cfg.slots) {
+    const dest0 = join(outRoot, set, `${name}.jpg`);
+    if (existsSync(dest0) && wanted.size && !wanted.has(name)) continue;
+    if (existsSync(dest0) && !wanted.size) { console.log(`  · ${set}/${name}.jpg exists, skipped`); continue; }
+    if (wanted.has(name)) delete credits[`${set}/${name}.jpg`];
     const url =
       `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}` +
       `&per_page=8&orientation=${orientation}`;

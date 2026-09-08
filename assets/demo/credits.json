@@ -1,0 +1,122 @@
+{
+  "maler/g1.jpg": {
+    "id": 30580640,
+    "query": "modern house exterior facade",
+    "photographer": "Karolina K",
+    "photographer_url": "https://www.pexels.com/@karolina-k-2149378526",
+    "source": "https://www.pexels.com/photo/modern-twin-houses-with-symmetrical-design-30580640/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "maler/g4.jpg": {
+    "id": 7534169,
+    "query": "minimal office interior white walls",
+    "photographer": "Max Vakhtbovych",
+    "photographer_url": "https://www.pexels.com/@artbovich",
+    "source": "https://www.pexels.com/photo/interior-of-office-with-tables-and-chairs-7534169/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "maler/g7.jpg": {
+    "id": 4469131,
+    "query": "garden shed wooden exterior",
+    "photographer": "Curtis Adams",
+    "photographer_url": "https://www.pexels.com/@curtis-adams-1694007",
+    "source": "https://www.pexels.com/photo/little-summer-shed-in-fenced-forest-terrain-4469131/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "restaurant/g1.jpg": {
+    "id": 4566718,
+    "query": "restaurant table setting",
+    "photographer": "wewe yang",
+    "photographer_url": "https://www.pexels.com/@wewe-yang-2383099",
+    "source": "https://www.pexels.com/photo/simple-table-setting-of-cafe-table-4566718/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "restaurant/g2.jpg": {
+    "id": 33314766,
+    "query": "restaurant interior warm",
+    "photographer": "The Ghazi",
+    "photographer_url": "https://www.pexels.com/@the-ghazi-2152398165",
+    "source": "https://www.pexels.com/photo/modern-restaurant-interior-with-cozy-dining-area-33314766/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "restaurant/g3.jpg": {
+    "id": 29039073,
+    "query": "fresh pasta dish",
+    "photographer": "Nano Erdozain",
+    "photographer_url": "https://www.pexels.com/@nano-erdozain-120534369",
+    "source": "https://www.pexels.com/photo/delicious-italian-pasta-meal-with-white-wine-29039073/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "restaurant/g4.jpg": {
+    "id": 38561518,
+    "query": "restaurant terrace courtyard",
+    "photographer": "_ Whittington",
+    "photographer_url": "https://www.pexels.com/@whittington",
+    "source": "https://www.pexels.com/photo/charming-urban-terrace-with-floral-displays-in-nyc-38561518/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "restaurant/g5.jpg": {
+    "id": 8696570,
+    "query": "italian antipasti plate",
+    "photographer": "Farhad Ibrahimzade",
+    "photographer_url": "https://www.pexels.com/@farhad",
+    "source": "https://www.pexels.com/photo/a-food-platter-with-sliced-tomatoes-8696570/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "restaurant/g6.jpg": {
+    "id": 37794986,
+    "query": "red wine glass table",
+    "photographer": "Jay Moon",
+    "photographer_url": "https://www.pexels.com/@jay-moon-2149536798",
+    "source": "https://www.pexels.com/photo/elegant-wine-bottle-with-glasses-on-table-37794986/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "zahnarzt/praxis.jpg": {
+    "id": 8459996,
+    "query": "modern clinic waiting room interior",
+    "photographer": "Los Muertos Crew",
+    "photographer_url": "https://www.pexels.com/@cristian-rojas",
+    "source": "https://www.pexels.com/photo/waiting-room-in-a-hospital-8459996/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "maler/g2.jpg": {
+    "id": 15275298,
+    "query": "apartment building stairwell white minimal",
+    "photographer": "Nguyen Huy",
+    "photographer_url": "https://www.pexels.com/@ngochuy",
+    "source": "https://www.pexels.com/photo/black-and-white-staircase-15275298/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "maler/g5.jpg": {
+    "id": 7587883,
+    "query": "empty room parquet floor white walls",
+    "photographer": "Max Vakhtbovych",
+    "photographer_url": "https://www.pexels.com/@artbovich",
+    "source": "https://www.pexels.com/photo/wooden-floor-and-white-walls-inside-a-house-7587883/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "maler/g6.jpg": {
+    "id": 30535158,
+    "query": "concrete basement stairs interior",
+    "photographer": "Jakub Zerdzicki",
+    "photographer_url": "https://www.pexels.com/@jakubzerdzicki",
+    "source": "https://www.pexels.com/photo/modern-underground-stairwell-with-concrete-design-30535158/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "maler/g8.jpg": {
+    "id": 13865606,
+    "query": "empty retail space interior white",
+    "photographer": "Kris Møklebust",
+    "photographer_url": "https://www.pexels.com/@moklebust",
+    "source": "https://www.pexels.com/photo/minimalist-furniture-in-apartment-13865606/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  },
+  "maler/g3.jpg": {
+    "id": 17639668,
+    "query": "modern residential building facade plaster",
+    "photographer": "Lucas Andrade",
+    "photographer_url": "https://www.pexels.com/@lucasandrade",
+    "source": "https://www.pexels.com/photo/yellow-residential-building-17639668/",
+    "license": "Pexels License (commercial use, no attribution required)"
+  }
+}

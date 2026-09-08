@@ -181,6 +181,16 @@ cpSync(join(root, "brand/cantelo-favicon.svg"), join(dist, "brand/favicon.svg"))
     if (out !== html) writeFileSync(full, out);
   }
   console.log(`  proof: ${weight} kB page weight, ${pageCount} pages`);
+  // The proof copy claims an average company page weighs twelve times this
+  // one. Roughly 2.2 MB is the going figure, so past ~183 kB that stops
+  // being true and the sentence has to change with it.
+  const CLAIMED_MULTIPLE = 12, AVERAGE_KB = 2200;
+  if (weight * CLAIMED_MULTIPLE > AVERAGE_KB) {
+    console.warn(
+      `  ! page weight ${weight} kB no longer supports the "${CLAIMED_MULTIPLE}x" claim ` +
+      `(that needs ${Math.floor(AVERAGE_KB / CLAIMED_MULTIPLE)} kB or less) — update proof.stats[0].d`
+    );
+  }
 }
 
 // --- sitemap + robots -----------------------------------------------------
