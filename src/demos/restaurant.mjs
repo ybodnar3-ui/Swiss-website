@@ -81,7 +81,7 @@ const body = `
       <a class="hb2" href="#mittag">Mittagsmenü ansehen</a>
     </div>
     <div class="meta">
-      <span>Di – So geöffnet</span><span>60 Plätze, Terrasse 30</span><span>Gehminute vom Bahnhof</span><span>041 000 00 00</span>
+      <span>Di – So geöffnet</span><span>60 Plätze, Terrasse 30</span><span>Gehminute vom Bahnhof</span><span>041 ••• •• 24</span>
     </div>
   </div>
 </section>
@@ -158,7 +158,7 @@ const body = `
       </ul>
       <ul class="hours" style="margin-top:34px">
         <li><b>Adresse</b><span>Musterweg 8, 6003 Luzern</span></li>
-        <li><b>Telefon</b><span>041 000 00 00</span></li>
+        <li><b>Telefon</b><span>041 ••• •• 24</span></li>
         <li><b>E-Mail</b><span>tisch@example.ch</span></li>
       </ul>
     </div>

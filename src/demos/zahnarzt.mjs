@@ -1,5 +1,6 @@
 import { demoShell } from "./shell.mjs";
-import { photo, monogram, mapSvg } from "./media.mjs";
+import { photo, mapSvg } from "./media.mjs";
+import { avatar } from "./avatars.mjs";
 
 const css = `
 body { background: #fff; color: #16242B; font: 400 17px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -50,6 +51,7 @@ body { background: #fff; color: #16242B; font: 400 17px/1.6 "Helvetica Neue", He
 .team { display: grid; gap: 26px; margin-top: 42px; }
 @media (min-width: 700px) { .team { grid-template-columns: repeat(4,1fr); } }
 .team .av { aspect-ratio: 1; border-radius: 50%; overflow: hidden; margin-bottom: 16px; }
+.avatar { width: 100%; height: 100%; display: block; }
 .team h3 { font-size: 17px; letter-spacing: -.02em; }
 .team p { font-size: 14px; color: #5C7079; margin-top: 4px; }
 
@@ -87,7 +89,7 @@ const body = `
       <p>Allgemeine Zahnmedizin, Prophylaxe und Implantologie für die ganze Familie. Neue Patientinnen und Patienten erhalten innert einer Woche einen Termin.</p>
       <div class="hbtns">
         <a class="b1" href="#termin">Termin online buchen</a>
-        <a class="b2" href="tel:+41440000000">044 000 00 00</a>
+        <a class="b2" href="#termin">044 ••• •• 12</a>
       </div>
     </div>
     <div>
@@ -99,7 +101,7 @@ const body = `
           <li><b>Samstag</b><span>nach Vereinbarung</span></li>
           <li><b>Sonntag</b><span>geschlossen</span></li>
         </ul>
-        <div class="emerg"><b>Notfall ausserhalb der Zeiten</b>Rufen Sie 044 000 00 01. Wir sind an den zahnärztlichen Notfalldienst angeschlossen.</div>
+        <div class="emerg"><b>Notfall ausserhalb der Zeiten</b>Rufen Sie 044 ••• •• 13. Wir sind an den zahnärztlichen Notfalldienst angeschlossen.</div>
       </div>
     </div>
   </div>
@@ -128,10 +130,10 @@ const body = `
     <h2 class="h2">Wer Sie behandelt</h2>
     <p class="sub">Vier Personen, seit Jahren dieselben. Sie werden nicht bei jedem Termin von jemand anderem empfangen.</p>
     <div class="team">
-      <div><div class="av">${monogram("Dr. med. dent. A. Meier","#2E6F8E")}</div><h3>Dr. med. dent. A. Meier</h3><p>Praxisinhaberin, Implantologie</p></div>
-      <div><div class="av">${monogram("Dr. med. dent. S. Frei","#3E7F6A")}</div><h3>Dr. med. dent. S. Frei</h3><p>Allgemeine Zahnmedizin</p></div>
-      <div><div class="av">${monogram("N. Hofer","#6B7F97")}</div><h3>N. Hofer</h3><p>Dentalhygienikerin</p></div>
-      <div><div class="av">${monogram("C. Baumann","#4A6E86")}</div><h3>C. Baumann</h3><p>Praxisassistenz, Empfang</p></div>
+      <div><div class="av">${avatar("meier")}</div><h3>Dr. med. dent. A. Meier</h3><p>Praxisinhaberin, Implantologie</p></div>
+      <div><div class="av">${avatar("frei")}</div><h3>Dr. med. dent. S. Frei</h3><p>Allgemeine Zahnmedizin</p></div>
+      <div><div class="av">${avatar("hofer")}</div><h3>N. Hofer</h3><p>Dentalhygienikerin</p></div>
+      <div><div class="av">${avatar("baumann")}</div><h3>C. Baumann</h3><p>Praxisassistenz, Empfang</p></div>
     </div>
   </div>
 </section>
@@ -158,7 +160,7 @@ const body = `
         <li><span>Lindenplatz 4, 8004 Zürich</span><span class="lab">Adresse</span></li>
         <li><span>Tram 2 / 3, Haltestelle Lindenplatz</span><span class="lab">ÖV</span></li>
         <li><span>Parkplätze im Hof</span><span class="lab">Anfahrt</span></li>
-        <li><span>044 000 00 00</span><span class="lab">Telefon</span></li>
+        <li><span>044 ••• •• 12</span><span class="lab">Telefon</span></li>
         <li><span>praxis@example.ch</span><span class="lab">E-Mail</span></li>
       </ul>
     </div>

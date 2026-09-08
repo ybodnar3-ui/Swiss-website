@@ -84,7 +84,7 @@ const body = `
     <div class="nav__l">
       <a href="#leistungen">Leistungen</a><a href="#arbeiten">Arbeiten</a><a href="#ablauf">Ablauf</a><a href="#kontakt">Kontakt</a>
     </div>
-    <a class="nav__t" href="#kontakt">044 000 00 00</a>
+    <a class="nav__t" href="#kontakt">044 ••• •• 68</a>
   </nav>
 
   <section class="hero">
@@ -181,7 +181,7 @@ const body = `
       <ul class="info" style="margin-top:56px">
         <li><span>Brunner Malerarbeiten GmbH</span><span class="lab">Betrieb</span></li>
         <li><span>Musterstrasse 12, 8820 Wädenswil</span><span class="lab">Adresse</span></li>
-        <li><span>044 000 00 00</span><span class="lab">Telefon</span></li>
+        <li><span>044 ••• •• 68</span><span class="lab">Telefon</span></li>
         <li><span>info@example.ch</span><span class="lab">E-Mail</span></li>
         <li><span>Mo–Fr 07:00–17:00</span><span class="lab">Erreichbar</span></li>
       </ul>

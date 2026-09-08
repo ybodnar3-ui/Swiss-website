@@ -32,18 +32,6 @@ export function photo({ set, name, alt, tone = ["#D9D4CC", "#A79E92"], cls = "" 
     style="--a:${tone[0]};--b:${tone[1]}"></span>`;
 }
 
-/** Initials stand in for a portrait: honest, and it looks deliberate. */
-export function monogram(name, tone) {
-  const initials = name
-    .replace(/^(Dr\.|med\.|dent\.)\s*/g, "")
-    .split(/\s+/)
-    .filter((w) => /^[A-ZÄÖÜ]/.test(w))
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join("");
-  return `<span class="mono-av" style="--a:${tone}" aria-hidden="true">${esc(initials)}</span>`;
-}
-
 /** A drawn street map beats a grey box labelled "Karte". */
 export function mapSvg(accent) {
   return `<svg class="map-svg" viewBox="0 0 400 300" role="img" aria-label="Lage" preserveAspectRatio="xMidYMid slice">
