@@ -14,7 +14,7 @@
   "phoneHref": "+410000000000",
   "whatsapp": "410000000000",
   "formEndpoint": "https://api.web3forms.com/submit",
-  "formKey": "REPLACE_WITH_WEB3FORMS_ACCESS_KEY",
+  "formKey": "4b210d1e-f7dc-46d0-a79e-a9d245f0a76d",
   "colors": {
     "ink": "#12211C",
     "paper": "#EDEFE9"
