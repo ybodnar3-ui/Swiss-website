@@ -1,7 +1,7 @@
 {
   "name": "Cantelo",
-  "domain": "cantelo.ch",
-  "baseUrl": "https://cantelo.ch",
+  "domain": "cantelo.tech",
+  "baseUrl": "https://cantelo.tech",
   "defaultLang": "de",
   "languages": [
     "de",
