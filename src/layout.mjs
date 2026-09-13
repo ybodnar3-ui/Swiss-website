@@ -156,6 +156,15 @@ const SCRIPT = `<script>
     e.preventDefault();
     var s=f.querySelector('.form__status'),btn=f.querySelector('button[type=submit]');
     var busy=f.dataset.sending,ok=f.dataset.success,bad=f.dataset.error,mail=f.dataset.email;
+    // One field takes either an e-mail or a phone number, so Reply-To can only
+    // be set when what was typed actually looks like an address.
+    var c=f.querySelector('[name=contact]'),rt=f.querySelector('[name=replyto]');
+    // Written without a regex on purpose: this script lives inside a template
+    // literal, which eats backslashes before they ever reach the browser.
+    if(c&&rt){
+      var v=c.value.trim(),at=v.indexOf('@'),dot=v.lastIndexOf('.');
+      rt.value=(at>0&&at===v.lastIndexOf('@')&&dot>at+1&&dot<v.length-2&&v.indexOf(' ')<0)?v:'';
+    }
     btn.disabled=true;s.textContent=busy;
     fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
       .then(function(r){return r.ok?r.json():Promise.reject(r)})

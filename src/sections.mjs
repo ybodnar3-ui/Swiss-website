@@ -219,6 +219,7 @@ export function contact(c, lang, site) {
         <input type="hidden" name="subject" value="${esc(site.name)} — ${esc(c.contact.kicker)} (${lang})">
         <input type="hidden" name="from_name" value="${esc(site.domain)}">
         <input type="hidden" name="page" id="f-page" value="{page}">
+        <input type="hidden" name="replyto" id="f-replyto" value="">
         <div class="hp" aria-hidden="true"><label>Botcheck<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
         <div class="field">
           <label for="f-name">${esc(f.name)}</label>
