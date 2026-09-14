@@ -23,7 +23,7 @@
     },
     "beispiele": {
       "title": "Beispiele — Cantelo",
-      "description": "Umgesetzte Projekte und Designkonzepte für Handwerk, Praxis und Gastronomie in der Schweiz."
+      "description": "Designkonzepte für Handwerk, Praxis und Gastronomie in der Schweiz — anklickbare Beispiele, wie eine Website für Ihren Betrieb aussehen kann."
     },
     "impressum": {
       "title": "Impressum — Cantelo",
@@ -310,12 +310,8 @@
   },
   "examples": {
     "kicker": "Beispiele",
-    "title": "Arbeiten und Konzepte",
-    "lead": "Umgesetzte Kundenprojekte und Designkonzepte. Konzepte sind gekennzeichnet und zeigen keine echten Unternehmen — wir schreiben lieber dazu, was echt ist, als es Ihnen zu überlassen, es herauszufinden.",
-    "realTitle": "Umgesetzte Projekte",
-    "realEmpty": "Die ersten freigegebenen Kundenprojekte erscheinen hier. Wir veröffentlichen keine Arbeit ohne Zustimmung des Kunden.",
-    "conceptsTitle": "Designkonzepte",
-    "conceptsLead": "Drei Beispiele, wie eine Website für einen typischen Schweizer Betrieb aussehen kann. Alle sind anklickbar. Die Unternehmen darin gibt es nicht.",
+    "title": "Designkonzepte",
+    "lead": "Drei Beispiele, wie eine Website für einen typischen Schweizer Betrieb aussehen kann. Alle sind anklickbar. Die Unternehmen darin gibt es nicht — das schreiben wir dazu, statt es Ihnen zu überlassen, es herauszufinden.",
     "conceptLabel": "Designkonzept",
     "openLabel": "Ansehen",
     "concepts": [

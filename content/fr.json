@@ -23,7 +23,7 @@
     },
     "beispiele": {
       "title": "Exemples — Cantelo",
-      "description": "Projets réalisés et concepts de design pour l'artisanat, les cabinets et la restauration en Suisse."
+      "description": "Concepts de design pour l'artisanat, les cabinets et la restauration en Suisse — des exemples cliquables de ce à quoi peut ressembler le site de votre entreprise."
     },
     "impressum": {
       "title": "Mentions légales — Cantelo",
@@ -310,12 +310,8 @@
   },
   "examples": {
     "kicker": "Exemples",
-    "title": "Travaux et concepts",
-    "lead": "Projets clients réalisés et concepts de design. Les concepts sont signalés comme tels et ne montrent aucune entreprise réelle — nous préférons vous dire ce qui est réel plutôt que de vous laisser le deviner.",
-    "realTitle": "Projets réalisés",
-    "realEmpty": "Les premiers projets clients validés apparaîtront ici. Nous ne publions aucun travail sans l'accord du client.",
-    "conceptsTitle": "Concepts de design",
-    "conceptsLead": "Trois exemples de ce à quoi peut ressembler le site d'une entreprise suisse typique. Tous sont cliquables. Les entreprises qui y figurent n'existent pas. Les concepts sont présentés en allemand.",
+    "title": "Concepts de design",
+    "lead": "Trois exemples de ce à quoi peut ressembler le site d'une entreprise suisse typique. Tous sont cliquables. Les entreprises qui y figurent n'existent pas — nous le disons plutôt que de vous laisser le deviner. Les concepts sont présentés en allemand.",
     "conceptLabel": "Concept de design",
     "openLabel": "Voir",
     "concepts": [

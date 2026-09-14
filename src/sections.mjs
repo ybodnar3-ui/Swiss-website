@@ -182,25 +182,10 @@ export function examples(c, lang, { full = false } = {}) {
       <h2 class="h-sec">${esc(e.title)}</h2>
       <p class="lead">${esc(e.lead)}</p>
     </div>
-    ${
-      !full
-        ? // The lead promises "completed projects and design concepts" but the
-          // teaser shows only concepts. Say so here too, not just on /beispiele/.
-          `<p class="empty" style="margin-top:clamp(36px,4vw,56px)">${esc(e.realEmpty)}</p>`
-        : ""
-    }
-    ${
-      full
-        ? `<h3 style="font-size:var(--step-3);margin-top:clamp(44px,5vw,72px)">${esc(e.realTitle)}</h3>
-    <p class="empty">${esc(e.realEmpty)}</p>
-    <h3 style="font-size:var(--step-3);margin-top:clamp(52px,6vw,88px)">${esc(e.conceptsTitle)}</h3>
-    <p class="lead" style="margin-top:16px">${esc(e.conceptsLead)}</p>`
-        : ""
-    }
     <div class="cards">
     ${cards}
     </div>
-    ${full ? "" : `<div class="btn-row" style="margin-top:40px"><a class="btn btn--ghost" href="${path(lang, "beispiele")}">${esc(e.conceptsTitle)}${icon.arrow}</a></div>`}
+    ${full ? "" : `<div class="btn-row" style="margin-top:40px"><a class="btn btn--ghost" href="${path(lang, "beispiele")}">${esc(c.nav.beispiele)}${icon.arrow}</a></div>`}
   </div>
 </section>`;
 }

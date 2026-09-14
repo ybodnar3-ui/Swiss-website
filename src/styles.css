@@ -312,7 +312,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .card:hover .card__go .arrow { transform: translateX(4px); }
 .card__go .arrow { transition: transform 160ms ease; }
 
-.empty { margin-top: 32px; padding: clamp(32px, 4vw, 52px); border: 1px dashed var(--rule-strong); color: var(--muted); font-size: 1rem; max-width: 62ch; }
 
 /* ---------- faq ---------- */
 

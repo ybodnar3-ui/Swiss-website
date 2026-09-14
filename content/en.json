@@ -23,7 +23,7 @@
     },
     "beispiele": {
       "title": "Examples — Cantelo",
-      "description": "Completed projects and design concepts for Swiss trades, practices and restaurants."
+      "description": "Design concepts for Swiss trades, practices and restaurants — clickable examples of what a website for your business can look like."
     },
     "impressum": {
       "title": "Legal notice — Cantelo",
@@ -310,12 +310,8 @@
   },
   "examples": {
     "kicker": "Examples",
-    "title": "Work and concepts",
-    "lead": "Completed client projects and design concepts. Concepts are labelled and show no real companies — we would rather tell you what is real than leave you to work it out.",
-    "realTitle": "Completed projects",
-    "realEmpty": "The first approved client projects will appear here. We publish no work without the client's consent.",
-    "conceptsTitle": "Design concepts",
-    "conceptsLead": "Three examples of what a website for a typical Swiss business can look like. All of them are clickable. The companies in them do not exist. The concepts are shown in German.",
+    "title": "Design concepts",
+    "lead": "Three examples of what a website for a typical Swiss business can look like. All of them are clickable. The companies in them do not exist — we say so rather than leave you to work it out. The concepts are shown in German.",
     "conceptLabel": "Design concept",
     "openLabel": "View",
     "concepts": [
