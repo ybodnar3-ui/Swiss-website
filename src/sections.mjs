@@ -7,7 +7,14 @@ const li = (s) => `<li>${icon.check}<span>${esc(s)}</span></li>`;
 /** Swiss price typography: a round amount is written 990.– , the dash standing
  *  in for the centimes. Applied to bare figures only — values like
  *  "Selbstkosten + 90.–" already carry their own formatting in the content. */
-const chf = (v) => (/^\+?\d+$/.test(String(v).trim()) ? `${String(v).trim()}.\u2013` : String(v));
+const chf = (v) => {
+  const s = String(v).trim();
+  if (!/^\+?\d+$/.test(s)) return String(v);
+  const sign = s.startsWith("+") ? "+" : "";
+  // Swiss thousands separator is an apostrophe: 1'050.–
+  const n = s.replace("+", "").replace(/\B(?=(\d{3})+(?!\d))/g, "\u2019");
+  return `${sign}${n}.\u2013`;
+};
 
 export function hero(c, lang) {
   return `<section class="hero">
