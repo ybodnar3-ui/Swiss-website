@@ -66,14 +66,14 @@
   ],
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "www.cantelo.tech"
         }
       ],
-      "destination": "https://cantelo.tech/:path*",
+      "destination": "https://cantelo.tech/$1",
       "permanent": true
     }
   ]
