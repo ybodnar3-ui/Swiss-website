@@ -40,7 +40,7 @@
   },
   "hero": {
     "title": "Il vostro sito web. In 7 giorni. 990.–",
-    "lead": "Realizziamo siti web per le piccole imprese svizzere. Prezzo fisso, termine fisso. Pagate quando il sito è online.",
+    "lead": "Realizziamo siti web per le piccole imprese svizzere. Prezzo fisso, termine fisso. Pagate solo quando il sito è online.",
     "ctaPrimary": "Richiedere un'offerta",
     "ctaSecondary": "Vedere gli esempi"
   },
@@ -152,7 +152,7 @@
       },
       {
         "t": "Il termine parte da voi",
-        "d": "Decorre dal giorno in cui i vostri contenuti ci arrivano al completo. Quello che ci serve ve lo diciamo prima."
+        "d": "Decorre dal giorno in cui i vostri contenuti ci arrivano per intero. Quello che ci serve ve lo diciamo prima."
       },
       {
         "t": "Il prezzo è fermo",
@@ -164,7 +164,7 @@
   "prices": {
     "kicker": "Prezzi",
     "title": "Tutti i prezzi in chiaro",
-    "lead": "La maggior parte delle agenzie scrive « offerta su richiesta ». Noi scriviamo quanto costa. Così in due minuti vedete se facciamo al caso vostro.",
+    "lead": "La maggior parte delle agenzie scrive «offerta su richiesta». Noi scriviamo quanto costa. Così in due minuti vedete se facciamo al caso vostro.",
     "main": {
       "price": "990",
       "currency": "CHF",
@@ -186,7 +186,7 @@
           "290"
         ],
         [
-          "Pagina « Posti vacanti »",
+          "Pagina «Posti vacanti»",
           "190"
         ],
         [
@@ -219,12 +219,12 @@
   "anchor": {
     "title": "Che cosa non pagate da noi",
     "items": [
-      "Una direzione di progetto seduta fra voi e il lavoro",
+      "Una direzione di progetto che si frappone fra voi e il lavoro",
       "L'affitto di un ufficio in centro",
       "Un venditore incaricato di piazzarvi qualcosa",
       "Il margine d'agenzia"
     ],
-    "note": "Per questo da noi costa quello che un'agenzia classica fattura quattro o cinque volte tanto."
+    "note": "Per questo da noi pagate quello che un'agenzia classica fattura quattro o cinque volte tanto."
   },
   "maintenance": {
     "kicker": "In seguito",
@@ -369,7 +369,7 @@
         "d": "Tutte costruite da un'unica fonte. Se cambia un prezzo, cambia in ogni lingua."
       }
     ],
-    "note": "Verificabile: tasto destro, « visualizza sorgente pagina ». Oppure inserite questo indirizzo su pagespeed.web.dev."
+    "note": "Verificabile: tasto destro, «visualizza sorgente pagina». Oppure inserite questo indirizzo su pagespeed.web.dev."
   },
   "faq": {
     "kicker": "Domande",
@@ -555,7 +555,7 @@
         {
           "h": "1. Prestazione",
           "p": [
-            "Cantelo realizza un sito web secondo l'estensione descritta nell'offerta. L'estensione della prestazione di base a 990 franchi è indicata su questo sito alla voce « Prestazioni ». Le prestazioni supplementari sono fornite solo se espressamente convenute."
+            "Cantelo realizza un sito web secondo l'estensione descritta nell'offerta. L'estensione della prestazione di base a 990 franchi è indicata su questo sito alla voce «Prestazioni». Le prestazioni supplementari sono fornite solo se espressamente convenute."
           ]
         },
         {

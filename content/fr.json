@@ -19,7 +19,7 @@
     },
     "preise": {
       "title": "Tarifs — Cantelo",
-      "description": "Liste de prix complète : site web 990 CHF, prestations complémentaires, maintenance dès 29 CHF par mois. Aucun frais caché, aucune offre à demander."
+      "description": "Liste de prix complète : site web 990 CHF, prestations complémentaires, maintenance dès 29 CHF par mois. Aucun frais caché, aucune offre à demander."
     },
     "beispiele": {
       "title": "Exemples — Cantelo",
@@ -40,7 +40,7 @@
   },
   "hero": {
     "title": "Votre site web. En 7 jours. 990.–",
-    "lead": "Nous réalisons des sites web pour les petites entreprises suisses. Prix fixe, délai fixe. Vous payez une fois le site en ligne.",
+    "lead": "Nous réalisons des sites web pour les petites entreprises suisses. Prix fixe, délai fixe. Vous ne payez qu'une fois le site en ligne.",
     "ctaPrimary": "Demander une offre",
     "ctaSecondary": "Voir les exemples"
   },
@@ -144,7 +144,7 @@
   "guarantee": {
     "kicker": "Garantie",
     "title": "Sept jours. Sinon vous ne payez rien.",
-    "lead": "Si votre site n'est pas en ligne le huitième jour ouvrable, il est à vous gratuitement. Pas remisé — gratuit.",
+    "lead": "Si votre site n'est pas en ligne le huitième jour ouvrable, il est à vous gratuitement. Pas à prix réduit — gratuit.",
     "points": [
       {
         "t": "Aucun acompte",
@@ -152,11 +152,11 @@
       },
       {
         "t": "Le délai part de chez vous",
-        "d": "Il court dès le jour où vos contenus nous parviennent au complet. Ce dont nous avons besoin, nous vous le disons à l'avance."
+        "d": "Il court dès le jour où vos contenus nous parviennent dans leur intégralité. Ce dont nous avons besoin, nous vous le disons à l'avance."
       },
       {
         "t": "Le prix est ferme",
-        "d": "990 francs sont 990 francs. Pas de suppléments pour ce que nous aurions oublié de compter."
+        "d": "990 francs, c'est 990 francs. Pas de suppléments pour ce que nous aurions oublié de compter."
       }
     ],
     "cta": "Demander une offre"
@@ -164,7 +164,7 @@
   "prices": {
     "kicker": "Tarifs",
     "title": "Tous les prix affichés",
-    "lead": "La plupart des agences écrivent « offre sur demande ». Nous écrivons ce que cela coûte. Vous voyez ainsi en deux minutes si nous sommes faits pour travailler ensemble.",
+    "lead": "La plupart des agences écrivent « offre sur demande ». Nous écrivons ce que cela coûte. Vous voyez ainsi en deux minutes si nous sommes faits pour travailler ensemble.",
     "main": {
       "price": "990",
       "currency": "CHF",
@@ -186,7 +186,7 @@
           "290"
         ],
         [
-          "Page « Postes vacants »",
+          "Page « Postes vacants »",
           "190"
         ],
         [
@@ -219,12 +219,12 @@
   "anchor": {
     "title": "Ce que vous ne payez pas chez nous",
     "items": [
-      "Une direction de projet assise entre vous et le travail",
+      "Une direction de projet qui s'intercale entre vous et le travail",
       "Un loyer de bureau en centre-ville",
       "Un commercial chargé de vous vendre quelque chose",
       "La marge d'agence"
     ],
-    "note": "C'est pourquoi coûte chez nous ce qu'une agence classique facture quatre à cinq fois plus cher."
+    "note": "C'est pourquoi vous payez ici ce qu'une agence classique facture quatre à cinq fois plus cher."
   },
   "maintenance": {
     "kicker": "Ensuite",
@@ -342,7 +342,7 @@
   "proof": {
     "kicker": "Preuve",
     "title": "Ce site est notre référence",
-    "lead": "Vous n'avez pas à nous croire sur parole. Regardez ce que nous avons construit pour nous-mêmes — et vérifiez chaque chiffre vous-même.",
+    "lead": "Vous n'avez pas à nous croire sur parole. Regardez ce que nous avons construit pour nous-mêmes — et vérifiez chaque chiffre par vous-même.",
     "stats": [
       {
         "n": "{weight}",
@@ -369,46 +369,46 @@
         "d": "Toutes construites depuis une source unique. Un prix change, il change dans chaque langue."
       }
     ],
-    "note": "Vérifiable : clic droit, « afficher le code source ». Ou entrez cette adresse sur pagespeed.web.dev."
+    "note": "Vérifiable : clic droit, « afficher le code source ». Ou entrez cette adresse sur pagespeed.web.dev."
   },
   "faq": {
     "kicker": "Questions",
     "title": "Ce que les clients nous demandent",
     "items": [
       {
-        "q": "Pourquoi cela ne coûte-t-il que 990 francs ?",
-        "a": "Parce que nous sommes un petit studio, que nous ne payons pas de bureau à la Bahnhofstrasse et qu'il n'y a pas de couche intermédiaire de chefs de projet. Nous réalisons des sites pour petites entreprises selon un déroulement rodé. Le même travail coûte quatre à cinq fois plus cher dans une agence classique, parce que quatre à cinq personnes y gagnent leur vie dessus."
+        "q": "Pourquoi cela ne coûte-t-il que 990 francs ?",
+        "a": "Parce que nous sommes un petit studio, que nous ne payons pas de bureau à la Bahnhofstrasse et qu'il n'y a pas de couche intermédiaire de chefs de projet. Nous réalisons des sites pour petites entreprises selon un déroulement rodé. Le même travail coûte quatre à cinq fois plus cher dans une agence classique, parce que quatre à cinq personnes en vivent."
       },
       {
-        "q": "Qui se trouve derrière Cantelo ?",
+        "q": "Qui se trouve derrière Cantelo ?",
         "a": "Cantelo est un petit studio. Nous travaillons sans bureau et sans force de vente, et traitons directement avec vous. Nos coordonnées complètes figurent dans les mentions légales."
       },
       {
-        "q": "Êtes-vous établis en Suisse ?",
+        "q": "Êtes-vous établis en Suisse ?",
         "a": "Non. Nous travaillons depuis l'étranger et servons des entreprises suisses. Votre site est hébergé en Suisse, le domaine est enregistré à votre nom, et la facture n'arrive qu'une fois le site en ligne. Le risque est donc de notre côté, pas du vôtre. Si vous cherchez un prestataire ayant un bureau dans votre commune, nous ne sommes pas le bon choix — nous préférons le dire maintenant plutôt qu'après le premier entretien."
       },
       {
-        "q": "Et si le résultat ne me plaît pas ?",
+        "q": "Et si le résultat ne me plaît pas ?",
         "a": "Deux séries de corrections sont comprises. Vous ne payez qu'après la réception. Si nous ne vous avons pas convaincu après deux séries, c'est que nous n'avons pas fait notre travail."
       },
       {
-        "q": "Combien de temps cela prend-il vraiment ?",
-        "a": "Sept jours ouvrables à partir du moment où nous avons tous les contenus. En pratique, c'est là que cela bloque le plus souvent : rassembler les photos et les informations prend souvent plus de temps que le site lui-même. Lors du premier entretien, nous vous disons précisément ce dont nous avons besoin."
+        "q": "Combien de temps cela prend-il vraiment ?",
+        "a": "Sept jours ouvrables à partir du moment où nous avons tous les contenus. En pratique, c'est là que cela bloque le plus souvent : rassembler les photos et les informations prend souvent plus de temps que le site lui-même. Lors du premier entretien, nous vous disons précisément ce dont nous avons besoin."
       },
       {
-        "q": "Ai-je besoin de la maintenance ?",
+        "q": "Ai-je besoin de la maintenance ?",
         "a": "Pas des forfaits de modifications. L'hébergement, le domaine et le SSL sont nécessaires à tout site — vous pouvez aussi vous en charger vous-même ou les acheter ailleurs. Nous le proposons parce que la plupart des entreprises préfèrent ne pas s'en occuper, pas parce que ce serait impossible sans nous."
       },
       {
-        "q": "Et si je résilie la maintenance ?",
+        "q": "Et si je résilie la maintenance ?",
         "a": "Vous recevez tous les fichiers de votre site et le domaine reste le vôtre. Rien ne vous retient chez nous."
       },
       {
-        "q": "Faites-vous aussi l'allemand ou l'italien ?",
+        "q": "Faites-vous aussi l'allemand ou l'italien ?",
         "a": "Oui, 290 francs par version linguistique supplémentaire. Ce site existe lui-même en quatre langues — vous voyez donc ce que vous obtenez."
       },
       {
-        "q": "J'ai déjà un site. Est-ce que cela en vaut la peine ?",
+        "q": "J'ai déjà un site. Est-ce que cela en vaut la peine ?",
         "a": "Cela dépend. Si votre site actuel fonctionne sur téléphone et vous apporte des demandes, gardez-le. Envoyez-nous le lien — si nous ne voyons pas de raison de le refaire, nous vous le dirons."
       }
     ]
@@ -416,14 +416,14 @@
   "contact": {
     "kicker": "Contact",
     "title": "Parlons de votre projet",
-    "lead": "Écrivez en deux phrases ce dont vous avez besoin. Nous répondons dans un jour ouvrable — avec une réponse concrète, et non par une demande de rendez-vous pour discuter d'un rendez-vous possible.",
+    "lead": "Écrivez en deux phrases ce dont vous avez besoin. Nous répondons sous un jour ouvrable — avec une réponse concrète, et non par une demande de rendez-vous pour discuter d'un rendez-vous possible.",
     "form": {
       "name": "Nom",
       "namePlaceholder": "Votre nom ou celui de l'entreprise",
       "contact": "E-mail ou téléphone",
       "contactPlaceholder": "Comment vous joindre",
       "message": "Votre message",
-      "messagePlaceholder": "Quelle est votre activité, et que doit faire le site ?",
+      "messagePlaceholder": "Quelle est votre activité, et que doit faire le site ?",
       "submit": "Envoyer la demande",
       "sending": "Envoi en cours…",
       "success": "Merci. Votre demande nous est parvenue — nous revenons vers vous dans un jour ouvrable.",
@@ -467,20 +467,20 @@
         {
           "h": "Contact",
           "p": [
-            "E-mail : cantelo.tech@protonmail.com",
-            "Téléphone : [NUMÉRO DE TÉLÉPHONE]"
+            "E-mail : cantelo.tech@protonmail.com",
+            "Téléphone : [NUMÉRO DE TÉLÉPHONE]"
           ]
         },
         {
           "h": "Registre du commerce",
           "p": [
-            "[NUMÉRO AU REGISTRE DU COMMERCE OU : NON INSCRIT AU REGISTRE DU COMMERCE]"
+            "[NUMÉRO AU REGISTRE DU COMMERCE OU : NON INSCRIT AU REGISTRE DU COMMERCE]"
           ]
         },
         {
           "h": "Taxe sur la valeur ajoutée",
           "p": [
-            "[NUMÉRO IDE / TVA OU : NON ASSUJETTI À LA TVA]"
+            "[NUMÉRO IDE / TVA OU : NON ASSUJETTI À LA TVA]"
           ]
         },
         {
@@ -506,14 +506,14 @@
           "p": [
             "Cantelo",
             "[ADRESSE]",
-            "E-mail : cantelo.tech@protonmail.com"
+            "E-mail : cantelo.tech@protonmail.com"
           ]
         },
         {
           "h": "Quelles données nous traitons",
           "p": [
             "Lors de la consultation de ce site, l'hébergeur enregistre dans des journaux serveur des indications techniques telles que l'adresse IP, l'heure de l'accès, la page consultée et le navigateur utilisé. Ces données sont nécessaires à une exploitation sûre et sont effacées après un court délai.",
-            "Si vous utilisez le formulaire de contact, nous traitons les indications que vous saisissez : nom, coordonnées et message. Nous les utilisons exclusivement pour répondre à votre demande."
+            "Si vous utilisez le formulaire de contact, nous traitons les indications que vous saisissez : nom, coordonnées et message. Nous les utilisons exclusivement pour répondre à votre demande."
           ]
         },
         {
@@ -555,7 +555,7 @@
         {
           "h": "1. Prestations",
           "p": [
-            "Cantelo réalise un site web selon l'étendue décrite dans l'offre. L'étendue de la prestation de base à 990 francs est indiquée sur ce site sous « Prestations ». Les prestations complémentaires ne sont fournies que si elles ont été expressément convenues."
+            "Cantelo réalise un site web selon l'étendue décrite dans l'offre. L'étendue de la prestation de base à 990 francs est indiquée sur ce site sous « Prestations ». Les prestations complémentaires ne sont fournies que si elles ont été expressément convenues."
           ]
         },
         {
@@ -579,7 +579,7 @@
         {
           "h": "5. Domaine et hébergement",
           "p": [
-            "Le domaine est enregistré au nom du client. La première année du domaine .ch est comprise dans le prix. Ensuite, les frais du bureau d'enregistrement s'appliquent ; ils sont pris en charge dans le cadre d'un abonnement de maintenance."
+            "Le domaine est enregistré au nom du client. La première année du domaine .ch est comprise dans le prix. Ensuite, les frais du bureau d'enregistrement s'appliquent ; ils sont pris en charge dans le cadre d'un abonnement de maintenance."
           ]
         },
         {
@@ -629,9 +629,9 @@
   },
   "analysis": {
     "kicker": "Gratuit",
-    "title": "Vous avez déjà un site ? Nous le regardons.",
-    "lead": "Envoyez-nous le lien. Sous 24 heures vous recevez une appréciation écrite : ce qui fonctionne, ce qui fait fuir vos clients et ce que coûterait la correction. Gratuit, même si vous ne commandez rien ensuite. Si nous ne voyons pas de raison de le refaire, nous vous l'écrivons.",
+    "title": "Vous avez déjà un site ? Nous le regardons.",
+    "lead": "Envoyez-nous le lien. Sous 24 heures vous recevez une appréciation écrite : ce qui fonctionne, ce qui fait fuir vos clients et ce que coûterait la correction. Gratuit, même si vous ne commandez rien ensuite. Si nous ne voyons pas de raison de le refaire, nous vous l'écrivons.",
     "cta": "Faire analyser mon site",
-    "prefill": "Mon site actuel : "
+    "prefill": "Mon site actuel : "
   }
 }
