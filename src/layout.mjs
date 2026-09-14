@@ -28,6 +28,34 @@ const WORDMARK = (color) => `<svg viewBox="0 0 693 140" role="img" aria-label="C
 export const wordmarkInk = WORDMARK("#12211C");
 export const wordmarkPaper = WORDMARK("#EDEFE9");
 
+/** Structured data for the home page of each language.
+ *  Deliberately states only what is true today: no address and no telephone,
+ *  because both are still placeholders, and false facts in structured data are
+ *  worse than absent ones. Both get added once the Impressum is filled. */
+function jsonLd({ site, c, lang }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `${site.baseUrl}/#cantelo`,
+    name: site.name,
+    url: `${site.baseUrl}${path(lang, "home")}`,
+    description: c.meta.home.description,
+    image: `${site.baseUrl}/brand/og.png`,
+    email: site.email,
+    areaServed: { "@type": "Country", name: "Switzerland" },
+    availableLanguage: site.languages.map((x) => x.toUpperCase()),
+    priceRange: "CHF 990.\u2013",
+    makesOffer: {
+      "@type": "Offer",
+      name: c.prices.main.title,
+      price: c.prices.main.price,
+      priceCurrency: "CHF",
+      availability: "https://schema.org/InStock",
+    },
+  };
+  return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
+}
+
 function head({ site, c, page, canonical, langs }) {
   const meta = c.meta[page];
   const alternates = langs
@@ -194,6 +222,7 @@ ${head({ site, c, page: pageKey, canonical, langs })}
 </head>
 <body${bodyClass ? ` class="${bodyClass}"` : ""}>
 <a class="skip" href="#main">${esc(c.nav.menu)}</a>
+${pageKey === "home" ? jsonLd({ site, c, lang }) : ""}
 ${header({ site, c, lang, page: pageKey, langs })}
 <main id="main">
 ${body}
