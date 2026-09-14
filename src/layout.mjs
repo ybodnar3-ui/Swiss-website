@@ -170,7 +170,7 @@ const SCRIPT = `<script>
     // e-mail is the system of record, and a failure here must stay invisible.
     try{
       var g=function(n){var el=f.querySelector('[name='+n+']');return el?el.value:'';};
-      fetch('/api/notify',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,
+      fetch('/api/notify/',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,
         body:JSON.stringify({name:g('name'),contact:g('contact'),message:g('message'),
           page:g('page'),botcheck:g('botcheck'),lang:document.documentElement.lang})}).catch(function(){});
     }catch(e){}
