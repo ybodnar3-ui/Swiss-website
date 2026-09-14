@@ -39,7 +39,7 @@
     }
   },
   "hero": {
-    "title": "Ihre Website. In 7 Tagen. 990 CHF.",
+    "title": "Ihre Website. In 7 Tagen. 990.–",
     "lead": "Wir bauen Websites für kleine Schweizer Unternehmen. Fester Preis, fester Termin. Sie zahlen erst, wenn die Website online ist.",
     "ctaPrimary": "Offerte anfragen",
     "ctaSecondary": "Beispiele ansehen"
@@ -77,7 +77,7 @@
   },
   "included": {
     "kicker": "Das Angebot",
-    "title": "Was für 990 CHF enthalten ist",
+    "title": "Was für 990.– enthalten ist",
     "lead": "Eine vollständige Website, die auf jedem Gerät funktioniert und rechtlich sauber ist. Nichts, was Sie nachträglich dazukaufen müssen, um sie überhaupt benutzen zu können.",
     "items": [
       {
@@ -203,7 +203,7 @@
         ],
         [
           "Premium-Domain (.swiss, .com aus zweiter Hand)",
-          "Selbstkosten + 90"
+          "Selbstkosten + 90.–"
         ],
         [
           "Express-Ausführung in 48 Stunden",
@@ -620,7 +620,7 @@
     "label": "Designkonzept",
     "text": "Beispiel von Cantelo. {name} ist kein echtes Unternehmen.",
     "back": "Zurück zu Cantelo",
-    "cta": "So eine Website ab 990 CHF"
+    "cta": "So eine Website ab 990.–"
   },
   "notFound": {
     "title": "Seite nicht gefunden",

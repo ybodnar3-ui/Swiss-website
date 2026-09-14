@@ -4,6 +4,11 @@ import { esc, icon, path, demoPath } from "./layout.mjs";
 
 const li = (s) => `<li>${icon.check}<span>${esc(s)}</span></li>`;
 
+/** Swiss price typography: a round amount is written 990.– , the dash standing
+ *  in for the centimes. Applied to bare figures only — values like
+ *  "Selbstkosten + 90.–" already carry their own formatting in the content. */
+const chf = (v) => (/^\+?\d+$/.test(String(v).trim()) ? `${String(v).trim()}.\u2013` : String(v));
+
 export function hero(c, lang) {
   return `<section class="hero">
   <div class="wrap">
@@ -57,7 +62,7 @@ export function priceRows(rows) {
     ${rows
       .map(
         ([label, price]) =>
-          `<tr><td>${esc(label)}</td><td>${esc(price)}${/^[+]?[0-9]/.test(String(price)) ? ' <span class="unit">CHF</span>' : ""}</td></tr>`
+          `<tr><td>${esc(label)}</td><td>${esc(chf(price))}</td></tr>`
       )
       .join("\n    ")}
   </tbody></table>`;
@@ -80,7 +85,7 @@ export function prices(c, lang, { header = true } = {}) {
     }
     <div class="price-main">
       <div class="price-main__l">
-        <div class="price-fig"><b>${esc(p.main.price)}</b><span>${esc(p.main.currency)}</span><em>${esc(p.main.label)}</em></div>
+        <div class="price-fig"><span class="price-cur">${esc(p.main.currency)}</span><b>${esc(chf(p.main.price))}</b><em>${esc(p.main.label)}</em></div>
         <h3>${esc(p.main.title)}</h3>
         <p>${esc(p.main.desc)}</p>
         <div class="anchor">
@@ -116,7 +121,7 @@ export function maintenance(c) {
         .map(
           (t) => `<div class="tier${t.featured ? " tier--featured" : ""}">
         <p class="tier__name">${esc(t.name)}</p>
-        <div class="tier__fig"><b>${esc(t.price)}</b><span>CHF</span></div>
+        <div class="tier__fig"><b>${esc(chf(t.price))}</b></div>
         <p class="tier__period">${esc(t.period)}</p>
         <p class="tier__desc">${esc(t.desc)}</p>
         <ul class="tier__items">${t.items.map(li).join("")}</ul>

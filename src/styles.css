@@ -229,10 +229,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .price-main__l { padding: clamp(32px, 4vw, 56px); border-bottom: 1px solid var(--on-ink-rule); }
 @media (min-width: 880px) { .price-main__l { border-bottom: 0; border-right: 1px solid var(--on-ink-rule); } }
 .price-main__r { padding: clamp(32px, 4vw, 56px); display: flex; flex-direction: column; justify-content: space-between; gap: 32px; }
-.price-fig { display: flex; align-items: baseline; gap: 12px; }
+.price-fig { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .price-fig b { font-size: clamp(3.5rem, 8vw, 6rem); font-weight: 700; letter-spacing: -0.05em; line-height: 0.9; font-variant-numeric: tabular-nums; }
-.price-fig span { font-size: var(--step-2); font-weight: 600; letter-spacing: -0.02em; }
-.price-fig em { font-style: normal; font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--on-ink-muted); }
+.price-cur { font-size: var(--step-2); font-weight: 600; letter-spacing: -0.02em; align-self: flex-start; padding-top: .35em; }
+.price-fig em { font-style: normal; font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--on-ink-muted); flex-basis: 100%; padding-top: 14px; }
 .price-main h3 { font-size: var(--step-3); margin-top: 26px; }
 .price-main p { color: var(--on-ink-muted); margin-top: 16px; max-width: 40ch; }
 

@@ -39,7 +39,7 @@
     }
   },
   "hero": {
-    "title": "Your website. In 7 days. 990 CHF.",
+    "title": "Your website. In 7 days. 990.–",
     "lead": "We build websites for small Swiss businesses. Fixed price, fixed deadline. You pay once the site is live.",
     "ctaPrimary": "Request a quote",
     "ctaSecondary": "See examples"
@@ -77,7 +77,7 @@
   },
   "included": {
     "kicker": "The offer",
-    "title": "What 990 CHF includes",
+    "title": "What 990.– includes",
     "lead": "A complete website that works on every device and is legally sound. Nothing you have to buy afterwards just to be able to use it.",
     "items": [
       {
@@ -203,7 +203,7 @@
         ],
         [
           "Premium domain (.swiss, .com on the secondary market)",
-          "cost + 90"
+          "cost + 90.–"
         ],
         [
           "Rush delivery within 48 hours",
@@ -620,7 +620,7 @@
     "label": "Design concept",
     "text": "An example by Cantelo. {name} is not a real company.",
     "back": "Back to Cantelo",
-    "cta": "A site like this from 990 CHF"
+    "cta": "A site like this from 990.–"
   },
   "notFound": {
     "title": "Page not found",

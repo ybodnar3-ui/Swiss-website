@@ -39,7 +39,7 @@
     }
   },
   "hero": {
-    "title": "Il vostro sito web. In 7 giorni. 990 CHF.",
+    "title": "Il vostro sito web. In 7 giorni. 990.–",
     "lead": "Realizziamo siti web per le piccole imprese svizzere. Prezzo fisso, termine fisso. Pagate quando il sito è online.",
     "ctaPrimary": "Richiedere un'offerta",
     "ctaSecondary": "Vedere gli esempi"
@@ -77,7 +77,7 @@
   },
   "included": {
     "kicker": "La prestazione",
-    "title": "Che cosa comprendono i 990 CHF",
+    "title": "Che cosa comprendono i 990.–",
     "lead": "Un sito completo, che funziona su ogni dispositivo ed è in regola dal profilo giuridico. Niente che dobbiate acquistare in seguito solo per poterlo usare.",
     "items": [
       {
@@ -203,7 +203,7 @@
         ],
         [
           "Dominio premium (.swiss, .com di seconda mano)",
-          "costo + 90"
+          "costo + 90.–"
         ],
         [
           "Realizzazione urgente in 48 ore",
@@ -620,7 +620,7 @@
     "label": "Concetto di design",
     "text": "Esempio realizzato da Cantelo. {name} non è un'impresa reale.",
     "back": "Torna a Cantelo",
-    "cta": "Un sito così da 990 CHF"
+    "cta": "Un sito così da 990.–"
   },
   "notFound": {
     "title": "Pagina non trovata",
