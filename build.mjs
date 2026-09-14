@@ -193,6 +193,15 @@ cpSync(join(root, "brand/cantelo-favicon.svg"), join(dist, "brand/favicon.svg"))
   }
 }
 
+// --- files served verbatim from the site root ------------------------------
+// public/ is copied last so its contents land at the root of dist/. Used for
+// things that must sit at an exact path: search-engine verification files,
+// ads.txt and the like.
+if (existsSync(join(root, "public"))) {
+  cpSync(join(root, "public"), dist, { recursive: true });
+  for (const f of readdirSync(join(root, "public"))) console.log(`  public/${f} → /${f}`);
+}
+
 // --- sitemap + robots -----------------------------------------------------
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
