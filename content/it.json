@@ -232,7 +232,7 @@
     "lead": "Facoltativa. Un sito continua a funzionare anche senza manutenzione — ma hosting, dominio e aggiornamenti di sicurezza vanno seguiti da qualcuno. O da voi, o da noi.",
     "tiers": [
       {
-        "name": "Basis",
+        "name": "Base",
         "price": "29",
         "period": "al mese",
         "desc": "L'esercizio del vostro sito.",
@@ -253,7 +253,7 @@
         "period": "al mese",
         "desc": "Per imprese che ogni tanto cambiano qualcosa.",
         "items": [
-          "Tutto quello che comprende Basis",
+          "Tutto quello che comprende Base",
           "Una piccola modifica al mese"
         ],
         "note": "Le modifiche non utilizzate decadono a fine mese.",
@@ -265,7 +265,7 @@
         "period": "al mese",
         "desc": "Per imprese in cui qualcosa si muove di continuo.",
         "items": [
-          "Tutto quello che comprende Basis",
+          "Tutto quello che comprende Base",
           "Fino a quattro piccole modifiche al mese"
         ],
         "note": "Le modifiche non utilizzate decadono a fine mese.",

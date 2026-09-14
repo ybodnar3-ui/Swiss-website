@@ -49,6 +49,9 @@ p { margin: 0; }
 .cfoot a { color: #EDEFE9; }
 .cfoot strong { color: #EDEFE9; display: block; font-size: 18px; margin-bottom: 8px; }
 
+/* Mock footer entries: present for completeness, deliberately inert. */
+.inert { cursor: not-allowed; opacity: .55; }
+
 /* image slots */
 .ph-img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .ph-img--empty { background: linear-gradient(150deg, var(--a) 0%, var(--b) 100%); }

@@ -169,7 +169,7 @@ const body = `
   <div class="w">
     <div><b>Trattoria Bellavista</b><p>Italienische Küche in Luzern. Familienbetrieb seit 1987.</p></div>
     <div><b style="font-size:14px;font-family:inherit;font-weight:600">Gast</b><ul><li><a href="#mittag">Mittagsmenü</a></li><li><a href="#zeiten">Öffnungszeiten</a></li><li><a href="#reservation">Reservation</a></li></ul></div>
-    <div><b style="font-size:14px;font-family:inherit;font-weight:600">Rechtliches</b><ul><li><a href="#">Impressum</a></li><li><a href="#">Datenschutz</a></li></ul></div>
+    <div><b style="font-size:14px;font-family:inherit;font-weight:600">Rechtliches</b><ul><li><span class="inert">Impressum</span></li><li><span class="inert">Datenschutz</span></li></ul></div>
   </div>
 </footer>`;
 

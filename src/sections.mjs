@@ -171,6 +171,13 @@ export function examples(c, lang, { full = false } = {}) {
       <p class="lead">${esc(e.lead)}</p>
     </div>
     ${
+      !full
+        ? // The lead promises "completed projects and design concepts" but the
+          // teaser shows only concepts. Say so here too, not just on /beispiele/.
+          `<p class="empty" style="margin-top:clamp(36px,4vw,56px)">${esc(e.realEmpty)}</p>`
+        : ""
+    }
+    ${
       full
         ? `<h3 style="font-size:var(--step-3);margin-top:clamp(44px,5vw,72px)">${esc(e.realTitle)}</h3>
     <p class="empty">${esc(e.realEmpty)}</p>

@@ -171,7 +171,7 @@ const body = `
   <div class="w">
     <div><b>Praxis am Lindenplatz</b><p>Zahnarztpraxis in Zürich Aussersihl. Alle Krankenkassen, alle Altersgruppen.</p></div>
     <div><b style="font-size:14px">Praxis</b><ul><li><a href="#behandlungen">Behandlungen</a></li><li><a href="#team">Team</a></li><li><a href="#termin">Termin</a></li></ul></div>
-    <div><b style="font-size:14px">Rechtliches</b><ul><li><a href="#">Impressum</a></li><li><a href="#">Datenschutz</a></li></ul></div>
+    <div><b style="font-size:14px">Rechtliches</b><ul><li><span class="inert">Impressum</span></li><li><span class="inert">Datenschutz</span></li></ul></div>
   </div>
 </footer>`;
 

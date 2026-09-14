@@ -7,7 +7,7 @@ import { join, dirname } from "node:path";
 import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 
-import { page as shell, SLUGS, path as urlPath, esc } from "./src/layout.mjs";
+import { page as shell, SLUGS, path as urlPath, esc, wordmarkInk } from "./src/layout.mjs";
 import * as P from "./src/pages.mjs";
 import { demos } from "./src/demos/index.mjs";
 
@@ -140,9 +140,74 @@ ${site.languages.map((l) => `<a href="${urlPath(l, "home")}" hreflang="${l}">${c
 );
 
 // --- 404 ------------------------------------------------------------------
+// Vercel serves one 404.html for the whole site, and rewriting to a localised
+// copy would answer 200 — a soft 404, which is worse than a German one. So the
+// page carries all four languages and picks by URL prefix. Without JavaScript
+// it shows the default language, exactly as before.
 {
-  const lang = site.defaultLang, c = content[lang];
-  write("404.html", shell({ site, c, lang, langs, pageKey: "home", canonical: urlPath(lang, "home"), body: P.notFound(c, lang) }));
+  const strings = Object.fromEntries(
+    site.languages.map((l) => [l, { ...content[l].notFound, label: content[l].label, home: urlPath(l, "home") }])
+  );
+  const d = site.defaultLang;
+  const block = (l) => `<div class="nf" data-lang="${l}"${l === d ? "" : " hidden"}>
+      <h1>${esc(strings[l].title)}</h1>
+      <p>${esc(strings[l].lead)}</p>
+      <a class="btn" href="${strings[l].home}">${esc(strings[l].cta)}</a>
+    </div>`;
+
+  write(
+    "404.html",
+    `<!doctype html>
+<html lang="${d}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(strings[d].title)} — ${esc(site.name)}</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="${site.cssPath}">
+<style>
+  body { display: flex; flex-direction: column; min-height: 100vh; }
+  .nf-wrap { flex: 1; display: grid; place-items: center; text-align: center; padding: 48px 24px; }
+  .nf-logo svg { height: 26px; width: auto; margin: 0 auto 48px; }
+  .nf h1 { font-size: var(--step-4); max-width: 16ch; margin-inline: auto; }
+  .nf p { font-size: var(--step-2); color: var(--muted); margin: 22px auto 34px; max-width: 40ch; line-height: 1.35; }
+  .nf-langs { display: flex; gap: 4px; justify-content: center; margin-top: 56px;
+    font-family: var(--mono); font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; }
+  .nf-langs a { padding: 6px 7px; text-decoration: none; color: rgba(var(--ink-rgb), .45); }
+  .nf-langs a:hover, .nf-langs a[aria-current="true"] { color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="nf-wrap">
+  <div>
+    <a class="nf-logo" href="${urlPath(d, "home")}" aria-label="${esc(site.name)}">${wordmarkInk}</a>
+    ${site.languages.map(block).join("\n    ")}
+    <nav class="nf-langs" aria-label="${esc(content[d].nav.language)}">
+      ${site.languages.map((l) => `<a href="${urlPath(l, "home")}" hreflang="${l}" lang="${l}" data-lang="${l}">${l}</a>`).join("")}
+    </nav>
+  </div>
+</div>
+<script>
+(function(){
+  var S=${JSON.stringify(strings)};
+  var m=location.pathname.match(/^\\/([a-z]{2})(\\/|$)/);
+  var l=(m&&S[m[1]])?m[1]:${JSON.stringify(d)};
+  document.documentElement.lang=l;
+  document.title=S[l].title+' \\u2014 ${esc(site.name)}';
+  var blocks=document.querySelectorAll('.nf');
+  for(var i=0;i<blocks.length;i++){blocks[i].hidden=blocks[i].getAttribute('data-lang')!==l;}
+  var ls=document.querySelectorAll('.nf-langs a');
+  for(var j=0;j<ls.length;j++){
+    if(ls[j].getAttribute('data-lang')===l)ls[j].setAttribute('aria-current','true');
+  }
+  var lg=document.querySelector('.nf-logo');
+  if(lg)lg.setAttribute('href',S[l].home);
+})();
+</script>
+</body>
+</html>`
+  );
 }
 
 // --- static assets --------------------------------------------------------

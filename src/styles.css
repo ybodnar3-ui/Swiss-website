@@ -9,7 +9,9 @@
 
   --rule: rgba(var(--ink-rgb), 0.16);
   --rule-strong: rgba(var(--ink-rgb), 0.32);
-  --muted: rgba(var(--ink-rgb), 0.62);
+  /* 0.62 measured 4.48:1 against the paper background — just under the
+     4.5:1 WCAG AA floor for text below 18px. 0.66 gives 5.07:1. */
+  --muted: rgba(var(--ink-rgb), 0.66);
   --faint: rgba(var(--ink-rgb), 0.06);
 
   --on-ink-rule: rgba(var(--paper-rgb), 0.18);

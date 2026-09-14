@@ -193,7 +193,7 @@ const body = `
   <div class="w">
     <div><b>Brunner Malerarbeiten</b><p>Maler- und Gipserbetrieb für Zürich, Zimmerberg und Sihltal.</p></div>
     <div><b style="font-size:14px">Leistungen</b><ul><li><a href="#leistungen">Innenanstrich</a></li><li><a href="#leistungen">Fassaden</a></li><li><a href="#leistungen">Gipserarbeiten</a></li></ul></div>
-    <div><b style="font-size:14px">Rechtliches</b><ul><li><a href="#">Impressum</a></li><li><a href="#">Datenschutz</a></li></ul></div>
+    <div><b style="font-size:14px">Rechtliches</b><ul><li><span class="inert">Impressum</span></li><li><span class="inert">Datenschutz</span></li></ul></div>
   </div>
 </footer>`;
 
