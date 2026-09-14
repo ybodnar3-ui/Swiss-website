@@ -166,6 +166,14 @@ const SCRIPT = `<script>
       rt.value=(at>0&&at===v.lastIndexOf('@')&&dot>at+1&&dot<v.length-2&&v.indexOf(' ')<0)?v:'';
     }
     btn.disabled=true;s.textContent=busy;
+    // Mirror into Telegram alongside the real submission. Fire and forget:
+    // e-mail is the system of record, and a failure here must stay invisible.
+    try{
+      var g=function(n){var el=f.querySelector('[name='+n+']');return el?el.value:'';};
+      fetch('/api/notify',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,
+        body:JSON.stringify({name:g('name'),contact:g('contact'),message:g('message'),
+          page:g('page'),botcheck:g('botcheck'),lang:document.documentElement.lang})}).catch(function(){});
+    }catch(e){}
     fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
       .then(function(r){return r.ok?r.json():Promise.reject(r)})
       .then(function(){f.reset();s.textContent=ok;btn.disabled=false;})
