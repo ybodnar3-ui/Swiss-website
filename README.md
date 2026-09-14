@@ -177,25 +177,50 @@ The free tier covers 250 submissions per month. The markup already carries a
 honeypot field for spam, and the page falls back to showing the email address
 if the request fails.
 
-## Before launch
+## Outstanding
 
-These are blocking. The Impressum and the privacy policy currently carry
-bracketed placeholders, and the site marks them with a visible notice so they
-cannot go live unnoticed.
+The site is live at https://cantelo.tech and complete except for the items
+below. Everything here needs information that only the owner has; none of it
+is code work.
 
-- [ ] Register `cantelo.ch` — as of 2026-09-07 it had no NS records and was
-      most likely free. `.swiss` requires an entry in the Swiss commercial
-      register; `.com` and `.eu` are taken.
-- [ ] Fill in the Impressum: legal name, address, email, phone, commercial
-      register and VAT status — in all four language files
-- [ ] Fill in the privacy policy: controller identity and contact
-- [ ] Fill in the place of jurisdiction in the terms
-- [ ] Put the real address, phone and WhatsApp number in `content/site.json`
-- [ ] Create a Web3Forms access key and put it in `content/site.json`,
-      then send a test enquiry
-- [ ] Have the French and Italian read by a native speaker
-- [ ] Add real client work to the examples page once a client has agreed
+### Legal — deliberately deferred
 
-Legal background for the first four: UWG Art. 3 Abs. 1 lit. s requires anyone
-offering services online to state their identity and contact address, and the
-revised DSG requires the privacy policy to name the controller.
+The Impressum and privacy policy carry bracketed placeholders, and both pages
+show a visible "incomplete" notice until the last one is gone. All four
+languages share one source, so each value is entered once.
+
+- [ ] Street and number, postcode and town, country — `legal.impressum`
+- [ ] Commercial register: number, or "not entered in the commercial register"
+- [ ] VAT: UID number, or "not liable for VAT"
+- [ ] Place of jurisdiction — `legal.agb`, last block
+- [ ] Decide how the responsible party is named. "Cantelo" alone may not be
+      enough where it is not a separate legal entity; an accountant or lawyer
+      should confirm whether it needs the owner's name alongside it.
+
+Background: UWG Art. 3 Abs. 1 lit. s requires anyone offering services online
+to state their identity and contact address; the revised DSG requires the
+privacy policy to name the controller. The site is publicly reachable, so
+these apply now rather than at some later launch date.
+
+### Phone
+
+- [ ] Real number in `content/site.json` (`phone`, `phoneHref`, `whatsapp`)
+
+One value feeds three places: the visible text, the `tel:` link, and the
+WhatsApp link. Until then the "Anrufen" button in the mobile action bar —
+the most prominent control on a phone — dials nothing.
+
+### Once both are in
+
+- [ ] Add `address` and `telephone` to the JSON-LD in `src/layout.mjs`. They
+      were left out on purpose: a false fact in structured data is worse than
+      a missing one.
+
+### Not blocking
+
+- [ ] Have the French and Italian read by a native speaker. Two deep passes
+      have been made and several real errors found, but that is still the
+      author checking their own text.
+- [ ] Add real client work to the examples page once a client agrees. Three
+      labelled design concepts stand in for it today.
+
