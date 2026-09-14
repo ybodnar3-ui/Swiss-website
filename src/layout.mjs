@@ -169,7 +169,11 @@ const SCRIPT = `<script>
     // Mirror into Telegram alongside the real submission. Fire and forget:
     // e-mail is the system of record, and a failure here must stay invisible.
     try{
-      var g=function(n){var el=f.querySelector('[name='+n+']');return el?el.value:'';};
+      // An unchecked checkbox still reports value "on", so the honeypot has to
+      // be read through .checked or every submission looks like a bot.
+      var g=function(n){var el=f.querySelector('[name='+n+']');
+        if(!el)return '';
+        return el.type==='checkbox'?(el.checked?'1':''):el.value;};
       fetch('/api/notify/',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,
         body:JSON.stringify({name:g('name'),contact:g('contact'),message:g('message'),
           page:g('page'),botcheck:g('botcheck'),lang:document.documentElement.lang})}).catch(function(){});
