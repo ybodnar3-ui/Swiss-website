@@ -312,6 +312,7 @@
     "kicker": "Esempi",
     "title": "Concetti di design",
     "lead": "Tre esempi di come può presentarsi il sito di una tipica impresa svizzera. Sono tutti cliccabili. Le imprese che vi figurano non esistono — lo diciamo noi, invece di lasciarvelo scoprire. I concetti sono presentati in tedesco.",
+    "track": "Dal 2019 abbiamo realizzato oltre 50 siti web — finora fuori dalla Svizzera. I concetti qui sotto mostrano come si presenta lo stesso lavoro per un'impresa svizzera.",
     "conceptLabel": "Concetto di design",
     "openLabel": "Vedere",
     "concepts": [
@@ -381,7 +382,7 @@
       },
       {
         "q": "Avete sede in Svizzera?",
-        "a": "No. Lavoriamo dall'estero e seguiamo imprese svizzere. Il vostro sito è ospitato in Svizzera, il dominio è registrato a vostro nome e la fattura arriva solo quando il sito è online. Il rischio sta quindi dalla nostra parte, non dalla vostra. Se cercate un fornitore con un ufficio nel vostro comune, non siamo la scelta giusta — preferiamo dirlo adesso piuttosto che dopo il primo colloquio."
+        "a": "No. Lavoriamo dall'estero e realizziamo siti per imprese svizzere. Il vostro sito è ospitato in Svizzera, il dominio è registrato a vostro nome e la fattura arriva solo quando il sito è online. Il rischio sta quindi dalla nostra parte, non dalla vostra. Se cercate un fornitore con un ufficio nel vostro comune, non siamo la scelta giusta — preferiamo dirlo adesso piuttosto che dopo il primo colloquio."
       },
       {
         "q": "E se il risultato non mi piace?",

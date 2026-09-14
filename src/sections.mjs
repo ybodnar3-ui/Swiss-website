@@ -182,6 +182,7 @@ export function examples(c, lang, { full = false } = {}) {
       <h2 class="h-sec">${esc(e.title)}</h2>
       <p class="lead">${esc(e.lead)}</p>
     </div>
+    <p class="notebar">${esc(e.track)}</p>
     <div class="cards">
     ${cards}
     </div>

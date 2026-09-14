@@ -312,6 +312,7 @@
     "kicker": "Beispiele",
     "title": "Designkonzepte",
     "lead": "Drei Beispiele, wie eine Website für einen typischen Schweizer Betrieb aussehen kann. Alle sind anklickbar. Die Unternehmen darin gibt es nicht — das schreiben wir dazu, statt es Ihnen zu überlassen, es herauszufinden.",
+    "track": "Seit 2019 haben wir über 50 Websites gebaut — bisher ausserhalb der Schweiz. Die Konzepte hier zeigen, wie dieselbe Arbeit für einen Schweizer Betrieb aussieht.",
     "conceptLabel": "Designkonzept",
     "openLabel": "Ansehen",
     "concepts": [
@@ -381,7 +382,7 @@
       },
       {
         "q": "Sitzen Sie in der Schweiz?",
-        "a": "Nein. Wir arbeiten aus dem Ausland und betreuen Schweizer Betriebe. Ihre Website wird in der Schweiz gehostet, die Domain läuft auf Ihren Namen, und die Rechnung kommt erst, wenn die Website online ist. Das Risiko liegt damit bei uns, nicht bei Ihnen. Wenn Sie einen Anbieter mit Büro in Ihrer Gemeinde suchen, sind wir nicht die Richtigen — das sagen wir lieber jetzt als nach dem ersten Gespräch."
+        "a": "Nein. Wir arbeiten aus dem Ausland und bauen Websites für Schweizer Betriebe. Ihre Website wird in der Schweiz gehostet, die Domain läuft auf Ihren Namen, und die Rechnung kommt erst, wenn die Website online ist. Das Risiko liegt damit bei uns, nicht bei Ihnen. Wenn Sie einen Anbieter mit Büro in Ihrer Gemeinde suchen, sind wir nicht die Richtigen — das sagen wir lieber jetzt als nach dem ersten Gespräch."
       },
       {
         "q": "Was ist, wenn mir das Ergebnis nicht gefällt?",

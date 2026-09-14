@@ -312,6 +312,7 @@
     "kicker": "Examples",
     "title": "Design concepts",
     "lead": "Three examples of what a website for a typical Swiss business can look like. All of them are clickable. The companies in them do not exist — we say so rather than leave you to work it out. The concepts are shown in German.",
+    "track": "Since 2019 we have built more than 50 websites — so far outside Switzerland. The concepts below show what the same work looks like for a Swiss business.",
     "conceptLabel": "Design concept",
     "openLabel": "View",
     "concepts": [
@@ -381,7 +382,7 @@
       },
       {
         "q": "Are you based in Switzerland?",
-        "a": "No. We work from abroad and serve Swiss businesses. Your website is hosted in Switzerland, the domain is registered in your name, and the invoice only comes once the site is live. The risk therefore sits with us, not with you. If you want a supplier with an office in your municipality, we are not the right choice — we would rather say so now than after the first call."
+        "a": "No. We work from abroad and build websites for Swiss businesses. Your website is hosted in Switzerland, the domain is registered in your name, and the invoice only comes once the site is live. The risk therefore sits with us, not with you. If you want a supplier with an office in your municipality, we are not the right choice — we would rather say so now than after the first call."
       },
       {
         "q": "What if I don't like the result?",

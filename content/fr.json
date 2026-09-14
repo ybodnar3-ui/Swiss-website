@@ -312,6 +312,7 @@
     "kicker": "Exemples",
     "title": "Concepts de design",
     "lead": "Trois exemples de ce à quoi peut ressembler le site d'une entreprise suisse typique. Tous sont cliquables. Les entreprises qui y figurent n'existent pas — nous le disons plutôt que de vous laisser le deviner. Les concepts sont présentés en allemand.",
+    "track": "Depuis 2019, nous avons réalisé plus de 50 sites web — jusqu'ici hors de Suisse. Les concepts ci-dessous montrent ce que donne le même travail pour une entreprise suisse.",
     "conceptLabel": "Concept de design",
     "openLabel": "Voir",
     "concepts": [
@@ -381,7 +382,7 @@
       },
       {
         "q": "Êtes-vous établis en Suisse ?",
-        "a": "Non. Nous travaillons depuis l'étranger et servons des entreprises suisses. Votre site est hébergé en Suisse, le domaine est enregistré à votre nom, et la facture n'arrive qu'une fois le site en ligne. Le risque est donc de notre côté, pas du vôtre. Si vous cherchez un prestataire ayant un bureau dans votre commune, nous ne sommes pas le bon choix — nous préférons le dire maintenant plutôt qu'après le premier entretien."
+        "a": "Non. Nous travaillons depuis l'étranger et réalisons des sites pour des entreprises suisses. Votre site est hébergé en Suisse, le domaine est enregistré à votre nom, et la facture n'arrive qu'une fois le site en ligne. Le risque est donc de notre côté, pas du vôtre. Si vous cherchez un prestataire ayant un bureau dans votre commune, nous ne sommes pas le bon choix — nous préférons le dire maintenant plutôt qu'après le premier entretien."
       },
       {
         "q": "Et si le résultat ne me plaît pas ?",
