@@ -202,19 +202,11 @@ to state their identity and contact address; the revised DSG requires the
 privacy policy to name the controller. The site is publicly reachable, so
 these apply now rather than at some later launch date.
 
-### Phone
+### Once the address is in
 
-- [ ] Real number in `content/site.json` (`phone`, `phoneHref`, `whatsapp`)
-
-One value feeds three places: the visible text, the `tel:` link, and the
-WhatsApp link. Until then the "Anrufen" button in the mobile action bar —
-the most prominent control on a phone — dials nothing.
-
-### Once both are in
-
-- [ ] Add `address` and `telephone` to the JSON-LD in `src/layout.mjs`. They
-      were left out on purpose: a false fact in structured data is worse than
-      a missing one.
+- [ ] Add `address` to the JSON-LD in `src/layout.mjs`. It was left out on
+      purpose: a false fact in structured data is worse than a missing one.
+      `telephone` is already there.
 
 ### Not blocking
 

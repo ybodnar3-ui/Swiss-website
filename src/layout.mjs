@@ -42,6 +42,7 @@ function jsonLd({ site, c, lang }) {
     description: c.meta.home.description,
     image: `${site.baseUrl}/brand/og.png`,
     email: site.email,
+    telephone: site.phoneHref,
     areaServed: { "@type": "Country", name: "Switzerland" },
     availableLanguage: site.languages.map((x) => x.toUpperCase()),
     priceRange: "CHF 990.\u2013",
